@@ -1,4 +1,4 @@
 # bmo-harmony
 Harmonizing BMO and Mozilla GitHub Projects
 
-* [Labels](labels)
+* [How to use labels in your project](labels)
