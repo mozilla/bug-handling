@@ -51,7 +51,7 @@ If it is not clear which pull request caused the regression, add the `regression
 
 ### Other Keywords
 
-Other useful labels include `enhancement` to distinguish feature requests, and `good first bug` to signal to contributors ([along with adequate documentation](http://blog.humphd.org/why-good-first-bugs-often-arent/).)
+Other useful labels include `enhancement` to distinguish feature requests, and `good first issue` to signal to contributors ([along with adequate documentation](http://blog.humphd.org/why-good-first-bugs-often-arent/).)
 
 ## Status Flags
 Bugzilla uses a set of status flags to communicate priorities between contributors, product managers, and the the release management team. 
