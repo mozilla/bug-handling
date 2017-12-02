@@ -60,43 +60,14 @@ A bug which contributors consider a high priority may not effect the current rel
 
 In Bugzilla, status for each release number is represented by a field which takes [one of multiple values](https://wiki.mozilla.org/Bugmasters/Process/Triage/Release_Status).
 
-In GitHub you’ll use one label to represent status. But there are multiple labels you’ll have to manage.
-
-* `status-nightly-?`, `status-beta-?`, `status-release-?`, `status-esr-?`
-  - We don’t know if the release train is affected by this bug, but we need to know, someone should be tracking this down
-* `status-nightly-affected`, `status-beta-affected`, `status-release-affected`, `status-esr-affected`
-  - Bug present in this release train 
-  - This may also be a `regression`
-* `status-nightly-unaffected`, `status-beta-unaffected`, `status-release-unaffected`, `status-esr-unaffected`
-  - Bug not present in this release train
-* `status-nightly-fixed`, `status-beta-fixed`, `status-release-fixed`, `status-esr-fixed`
-  - Bug fixed with a pull request in this version
-* `status-nightly-verified`, `status-beta-verified`, `status-release-verified`, `status-esr-verified`
-  - Bug fixed with a pull request in this version and QA has verified the fix
-* `status-nightly-disabled`, `status-beta-disabled`, `status-release-disabled`, `status-esr-disabled`
-  - The pull request with a fix for this bug has been backed out on this release train, or the code disabled with a preference or a feature-flag
-  - If the pull request was backed out, then there is most likely a corresponding `regression` bug, and that can be closed, but the bug with the pull request that caused the regression should remain open
-* `status-nightly-verified-disabled`, `status-beta-verified-disabled`, `status-release-verified-disabled`, `status-esr-verified-disabled`
-  - As above, but QA has confirmed
-* `status-nightly-wontfix`, `status-beta-wontfix`, `status-release-wontfix`, `status-esr-wontfix`
-  - Bug present on this release train, but will not take a fix on this train
-  - Not the same as closing bug as `wontfix`.
-* `status-nightly-fix-optional`, `status-beta-fix-optional`, `status-release-fix-optional`, `status-esr-fix-optional`
-  - Fix may be taken, but does not jump the queue
+It's recommended that you don't use status and tracking flag tags in GitHub issues and use another tool such a Trello or a worksheet to communicate to Release Drivers on work that needs to land in the `mozilla-centra1` repository.
 
 ## Summary
 * Resolution statuses
 	* `invalid`, `duplicate`, `incomplete`, `worksforme`, `wontfix`
 * Regressions
 	* `regression`, `regressionwindow-wanted`, `regression-internal`
+* Priority
+	* `P1`, `P2`, `P3`, `P4`, `P5`
 * Other keywords
 	* `enhancement`, `good first bug`
-* Status Flags
-	* `status-nightly-?`, `status-beta-?`, `status-release-?`, `status-esr-?`
-	* `status-nightly-affected`, `status-beta-affected`, `status-release-affected`, `status-esr-affected`
-	* `status-nightly-unaffected`, `status-beta-unaffected`, `status-release-unaffected`, `status-esr-unaffected
-	* `status-nightly-verified`, `status-beta-verified`, `status-release-verified`, `status-esr-verified`
-	* `status-nightly-disabled`, `status-beta-disabled`, `status-release-disabled`, `status-esr-disabled`
-	*  `status-nightly-wontfix`, `status-beta-wontfix`, `status-release-wontfix`, `status-esr-wontfix`
-	* `status-nightly-fix-optional`, `status-beta-fix-optional`, `status-release-fix-optional`, `status-esr-fix-optional`
-
