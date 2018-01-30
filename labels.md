@@ -68,6 +68,6 @@ It's recommended that you don't use status and tracking flag tags in GitHub issu
 * Regressions
 	* `regression`, `regressionwindow-wanted`, `regression-internal`
 * Priority
-	* `P1`, `P2`, `P3`, `P4`, `P5`
+	* `P1`, `P2`, `P3`, `P5`
 * Other keywords
 	* `enhancement`, `good first bug`
