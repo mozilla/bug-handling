@@ -1,9 +1,10 @@
 # A Mozillian’s Garden of Metadata for GitHub
-You have good reasons for running your piece of the Firefox project on GitHub: familiar tooling,  an easy path for contributors, change sets which are integrated with code reviews, and emoji 🦊.
+You have good reasons for running your piece of the Firefox project on GitHub: familiar tooling, an easy path for contributors, change sets which are integrated with code reviews, and emoji 🦊.
 
-To have better consistency with code and task tracking among Mozilla Central, Bugzilla, and GitHub, I request that you use a common set of labels in your projects. Some of the reasons why improved consistency in our conventions would benefit us include: 
+To have better consistency with code and task tracking among Mozilla Central, Bugzilla, and GitHub, we request that you use a common set of labels in your projects. Benefits of improved consistency in our conventions include:
 
-* Consistency makes measurement of processes easier across the organization
+* Consistency makes measurement of processes simpler across the organization
+* Consistency makes it easier to write re-usable process tools
 * Consistency increases clarity for those than need to work across different repositories and bug trackers
 * Consistency reduces friction around engineering mobility between projects
 
