@@ -1,64 +1,57 @@
-# Triage Process for Firefox Components in mozilla-central and Bugzilla (Original)
-
+# Triage Process for Firefox Components in Mozilla-central and Bugzilla
 ## Why Triage
-
 Staying on top of the bugs in your component means:
 
 * You get ahead of critical regressions and crashes which could trigger a point release if uncaught
 	* And you don't want to spend your holiday with the Release Management team (not that they don't like you)
 * Your bug queue is not overwhelming
-	* New members of your team do not see the bug queue and get ''the wiggins''
-
+	* Members of your team do not see the bug queue and get the ‘wiggins’
+	* 
 ## Who Triages
+Engineering managers and directors are responsible for naming the individuals responsible for triaging bugs in a component.
 
-See list of [triage leads](https://wiki.mozilla.org/Bugmasters/Project/Bug_Handling/Triage_Leads).
+We use Bugzilla to track this. See the [list of triage owners](https://bugzilla.mozilla.org/page.cgi?id=triage_owners.html).
+
+If you need to change who is responsible for triaging a bug in a component, please [file a bug against bugzilla.mozilla.org in the Administration component](https://bugzilla.mozilla.org/enter_bug.cgi?product=bugzilla.mozilla.org&component=Administration).  When a new component is created, a triage owner **must** be named.
 
 ## What Do You Triage
-There are several queries you should be minding:
+As a triage owner the queries you should be following for your component are:
 
-* All open, confirmed bugs in a component without a pending needinfo flag since 1 July 2016
-* All bugs with pending needinfo's in a component which have not been modified in two weeks
-* All bugs with active review requests in a component which have not been modified in five days
+* All open, confirmed bugs in your component without a pending needinfo flag since start of current release cycle
+* All open, bugs with pending needinfo flags in your component which have not been modified in two weeks
+* All bugs with active review requests in your component which have not been modified in five days
+
+The above queries are already in the triage tool.
+
+These bugs are reviewed in the week Regression Triage meeting
 * Regressions without -status-firefoxNN decisions
 * Regressions without a regression range
 
-The [above queries are already in the triage tool](https://mozilla.github.io/triage-center/).
-
 ## How Do You Triage
-
-### Weekly or More Frequently (depending on the component)
-Find un-triaged bugs in your component. 
+Weekly or More Frequently (depending on the component) find un-triaged bugs in your component.
 
 There's a tool to help you find bugs https://mozilla.github.io/triage-center/ and the source is at https://github.com/mozilla/triage-center/.
 
 For each bug decide priority (you can override what's already been set, as a triage lead, you are the decider.)
 
-* P1
-	* Fix in the current release or iteration
-* P2
-	* Fix in the next release or iteration
-* P3
-	* Backlog
-* P4
-	* Maintained by bots
-* P5
-	* Will not fix, but will accept a patch
+P1
+    Fix in the current release or iteration
+P2
+    Fix in the next release or iteration
+P3
+    Backlog
+P4
+    Maintained by bots
+P5
+    Will not fix, but will accept a patch
 
-### What About Release Status (`status_firefoxNN`) Flags
+### What About Release Status (status_firefoxNN) Flags
 
 Release status (and tracking) flags are set independent of triage decisions, but should be consistent with triage decisions.
 
-If an unresolved bug is marked `status_firefoxNN = affected` then `priority = P1` should be true. 
+Also, as a release approaches, the release status of open, high priority (P1) bugs can change. Triagers and engineering leads must review open bugs with a release status of affected and fix_optional, and decide which of these to keep, and move the others to wontfix for the current cycle.
 
-This relationship is ''not'' transitive.
-
-If a bug is triaged as P1, its status may be one of `affected`, `wontfix`, `fix-optional`, `disabled` as well. 
-
-Also, as a release approaches, the release status of open, high priority (P1) bugs can change. Triagers and engineering leads ''must'' review open bugs with a release status of `affected` and `fix_optional`, and decide which of these to keep, and move the others to `wontfix` for the current cycle.
-
-Use the shared query [Planned Fixes for Next Release](https://bugzilla.mozilla.org/buglist.cgi?cmdtype=runnamed&namedcmd=Planned%20Fixes%20for%20Next%20Release&list_id=13846696) to review these, and move the ones which make sense to [Planned Fixeds for Current Cycle](https://bugzilla.mozilla.org/buglist.cgi?cmdtype=runnamed&namedcmd=Planned%20Fixes%20for%20Current%20Cycle&list_id=13846701).
-
-An explanation of the [release status field](https://wiki.mozilla.com/Bugmasters/Process/Triage/Release_Status).
+An explanation of the release status field.
 
 ### How Do I Handle Edge Cases
 
@@ -68,41 +61,64 @@ If you don't have a reproduction or confirmation, or have questions needinfo som
 
 #### This doesn't fit into a P1, P2, P3, P4, or P5 framework
 
-Mark it as a P3. If it's a tracking bug, make sure it's marked as [meta].
+Mark it as a P3. 
 
-#### Wrong Component
+If it's a tracking bug, make sure has “[meta]” in the title and has the `meta` keyword added.
+
+If it’s a feature request, set the bug’s priority field to `enhancement`.
+
+#### Bug is in the wrong Component
 
 Remove any priority set, then either move to what you think is the correct component, or needinfo the person responsible for the component to ask them.
 
-#### I don't think we should work on it at any time 
+#### I don't think we should work on it at any time
 
 If you'll accept a patch, mark it as P5, otherwise, close it as WONTFIX
 
-## Watch open needinfos
+#### My project is on GitHub
 
-Don't let open needinfos linger for more than two weeks. Close minor bugs with unresponded needinfos. Chase down other needinfo requestees. The tool will help you find these (the query is imperfect.)
+We have a guide for GitHub projects to follow when triaging.
 
-## End of Iteration
+### Watch open needinfo flags
 
-* P2s become P1s after review
-* Hoist selected P3s to P2's or P1
+Don't let open needinfo flags linger for more than two weeks.
+
+Close minor bugs with unresponded needinfo flags. 
+
+Follow up on needinfo flag requests. 
+
+The tool will help you find these (the query is imperfect.)
+
+### End of Iteration/Release Cycle
+
+#### Review P1s
+
+Are there unresolved P1s? 
+
+Revisit their priority, and move to backlog (P3.) 
+
+#### Review P2s
+
+Are there P2s that should move to P1s for the next cycle?
+
+Are there P2s you now know are lower priority, move to P3.
+
+#### Review P3s
+
+Are their P3 bugs you now know you won’t get to? Either demote to P5 (will accept patch) or resolve as WONTFIX.
+
+Remember that bugs which have no activity in a year are now reaped into the INACTIVE resolution. 
 
 ## Tools
 
-{{Quote|text=One tool we use in addons is triage-with-me. Its a Firefox Add-on that sends all the pages you click on in bugzilla into a server which then sends the URL to everyone else in the triage.|source=Andy McKay}}
+"One tool we use in addons is triage-with-me. Its a Firefox Add-on that sends all the pages you click on in bugzilla into a server which then sends the URL to everyone else in the triage." – Andy McKay
 
-The upshot is, one person clicks on links in Bugzilla, the bugs open
-up on everyone else's computer. 
+The upshot is, one person clicks on links in Bugzilla, the bugs open up on everyone else's computer.
 
-* https://addons.mozilla.org/en-US/firefox/addon/triage-with-me/
-* http://www.agmweb.ca/2013-09-06-triage/
-* http://www.agmweb.ca/2015-03-10-triage-with-me-update/
+    https://addons.mozilla.org/en-US/firefox/addon/triage-with-me/
+    http://www.agmweb.ca/2013-09-06-triage/
+    http://www.agmweb.ca/2015-03-10-triage-with-me-update/
 
-## ’My project is on GitHub'
-
-[We have a guide for GitHub projects to follow when triaging](https://mozilla.github.io/bmo-harmony/labels).
-
-## Questions 
-
-* Ask in #bugmasters on irc.mozilla.org
-* Email emceeaich@mozilla.com
+## Questions
+    Ask in #bugmasters on irc.mozilla.org
+    Email emceeaich@mozilla.com
