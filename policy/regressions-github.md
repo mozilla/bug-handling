@@ -30,6 +30,8 @@ If the change set containing the patch for the bug is backed out, for any reason
 
 The team responsible for the component with the regression **should** strive to create a patch for mozilla-central which contains the fix for the bug alone, not a monolithic patch containing changes for several other bugs or features. 
 
+Landings of third-party libraries [**must** contain a manifest file](https://docs.google.com/document/d/12ihxPXBo9zBBaU_pBsPrc_wNHds4Upr-PwFfiSHrbu8).
+
 ## Best Practices
 ### You must file a regression bug in Bugzilla
 
