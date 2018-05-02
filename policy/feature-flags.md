@@ -43,11 +43,11 @@ A bug is filed, "Make Tabby Cats the default new tab experience."
 
 It's decided that this should be controlled behind a preference, `browser.newtabpage.default.tabbycat`:
 
-
-
 *   A comment is filed listing the name of the preference
 *   The `behind-pref` flag is set to +
 *   The `qe-verify` flag is set to ?
+
+![Screenshot of Bugzilla with tracking pane open for editing displaying the behind-pref and qe-verify flags](/public/images/feature-flags-editing-in-bmo.png)
 
 A patch lands in mozilla-central with the code for the feature controlled by the preference, then:
 
