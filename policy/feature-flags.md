@@ -16,6 +16,14 @@ _The bug **must** request the `qe-verify` flag (setting it to `?`) and the bug *
 
 _When it is time to release the feature on a channel, a bug, dependent on the feature bug, should be filed to flip the pref._
 
+### Questions
+
+> _NB: this is not the current practice for feature visiblity and under discussion._
+>
+> In current practice, the preference enabling the feature is set on, and compiler flags are used to turn it off in non-Nightly  builds.
+>
+> There is also discussion of moving feature visibility out of the preference system and into a separate 'feature flags' system more consistent with how other products and projects enable features.
+
 ### Example
 
 A bug is filed, "Make Tabby Cats the default new tab experience." 
