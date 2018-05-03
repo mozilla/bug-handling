@@ -12,7 +12,7 @@ _Any bug controlled by a flag **must** be added to the Firefox Feature Trello bo
 
 _The bug **must** state in a comment or the summary which preference will be used to manage visibility._
 
-_The bug **must** have the `qe-verify` flag set to ? until verified._
+_The bug **must** request the `qe-verify` flag (setting it to `?`) and the bug **must** be verfified (Status: RESOVED, Resolution: VERIFIED) by QA once they have accepted the `qe-verify` request (setting the flag to `+`)._
 
 _When it is time to release the feature on a channel, a bug, dependent on the feature bug, should be filed to flip the pref._
 
@@ -24,16 +24,19 @@ It's decided that this should be controlled behind a preference, `browser.newtab
 
 *   A comment is filed listing the name of the preference
 *   The `behind-pref` flag is set to +
-*   The `qe-verify` flag is set to ?
+*   The `qe-verify` flag is set to ?, requesting QA's attention
 
 ![Screenshot of Bugzilla with tracking pane open for editing displaying the behind-pref and qe-verify flags](/public/images/feature-flags-editing-in-bmo.png)
 
+By default, the preference enabling the feature **should not** be set.
+
 A patch lands in mozilla-central with the code for the feature controlled by the preference, then:
 
-*   By default, the flag enabling the feature **should not** be set
+*   The bug's status is moved to RESOLVED and resolution to FIXED.
+*   QA agrees to take on verfication, setting `qe-verify` to `+`
 *   The feature is tested with and without the flag set and confirmed to work
-*   If it passes `qe-verify` is set to + and work continues
-*   Otherwise the patch is backed out to be landed again later
+*   QA moveds the bug's resolution to VERIFIED
+*   Otherwise the patch is backed out to be landed again later, and the bug REOPENED
 
 RelMan and product management decide if the feature will be enabled in Nightly, then:
 
