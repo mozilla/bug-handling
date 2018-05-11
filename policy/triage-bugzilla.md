@@ -1,4 +1,5 @@
 # Triage Process for Firefox Components in Mozilla-central and Bugzilla
+
 ## Why Triage
 Staying on top of the bugs in your component means:
 
@@ -6,8 +7,9 @@ Staying on top of the bugs in your component means:
 	* And you don't want to spend your holiday with the Release Management team (not that they don't like you)
 * Your bug queue is not overwhelming
 	* Members of your team do not see the bug queue and get the ‘wiggins’
-	* 
+
 ## Who Triages
+
 Engineering managers and directors are responsible for naming the individuals responsible for triaging bugs in a component.
 
 We use Bugzilla to track this. See the [list of triage owners](https://bugzilla.mozilla.org/page.cgi?id=triage_owners.html).
@@ -15,6 +17,7 @@ We use Bugzilla to track this. See the [list of triage owners](https://bugzilla.
 If you need to change who is responsible for triaging a bug in a component, please [file a bug against bugzilla.mozilla.org in the Administration component](https://bugzilla.mozilla.org/enter_bug.cgi?product=bugzilla.mozilla.org&component=Administration).  When a new component is created, a triage owner **must** be named.
 
 ## What Do You Triage
+
 As a triage owner the queries you should be following for your component are:
 
 * All open, confirmed bugs in your component without a pending needinfo flag since start of current release cycle
@@ -28,22 +31,25 @@ These bugs are reviewed in the week Regression Triage meeting
 * Regressions without a regression range
 
 ## How Do You Triage
+
 Weekly or More Frequently (depending on the component) find un-triaged bugs in your component.
 
 There's a tool to help you find bugs https://mozilla.github.io/triage-center/ and the source is at https://github.com/mozilla/triage-center/.
 
 For each bug decide priority (you can override what's already been set, as a triage lead, you are the decider.)
 
-P1
-    Fix in the current release or iteration
-P2
-    Fix in the next release or iteration
-P3
-    Backlog
-P4
-    Maintained by bots
-P5
-    Will not fix, but will accept a patch
+<dl>
+    <dt>P1</dt>
+    <dd>Fix in the current release or iteration</dd>
+    <dt>P2</dt>
+    <dd>Fix in the next release or iteration<dd>
+    <dt>P3</dt>
+    <dd>Backlog<dd>
+    <dt>P4</dt>
+    <dd>Maintained by bots<dd>
+    <dt>P5</dt>
+    <dd>Will not fix, but will accept a patch<dd>
+</dl>
 
 ### What About Release Status (status_firefoxNN) Flags
 
@@ -55,7 +61,7 @@ An explanation of the release status field.
 
 ### How Do I Handle Edge Cases
 
-#### I Don't Have Enough Information
+#### I don't have enough information
 
 If you don't have a reproduction or confirmation, or have questions needinfo someone who can answer your question and finish triaging the bug when they reply.
 
@@ -111,14 +117,17 @@ Remember that bugs which have no activity in a year are now reaped into the INAC
 
 ## Tools
 
+### Triage with me
+
 "One tool we use in addons is triage-with-me. Its a Firefox Add-on that sends all the pages you click on in bugzilla into a server which then sends the URL to everyone else in the triage." – Andy McKay
 
 The upshot is, one person clicks on links in Bugzilla, the bugs open up on everyone else's computer.
 
-    https://addons.mozilla.org/en-US/firefox/addon/triage-with-me/
-    http://www.agmweb.ca/2013-09-06-triage/
-    http://www.agmweb.ca/2015-03-10-triage-with-me-update/
+* https://addons.mozilla.org/en-US/firefox/addon/triage-with-me/
+* http://www.agmweb.ca/2013-09-06-triage/
+* http://www.agmweb.ca/2015-03-10-triage-with-me-update/
 
 ## Questions
-    Ask in #bugmasters on irc.mozilla.org
-    Email emceeaich@mozilla.com
+
+* Ask in #bugmasters on irc.mozilla.org
+* Email emceeaich@mozilla.com
