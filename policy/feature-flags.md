@@ -46,7 +46,8 @@ A patch lands in mozilla-central with the code for the feature controlled by the
 *   QA moveds the bug's resolution to VERIFIED
 *   Otherwise the patch is backed out to be landed again later, and the bug REOPENED
 
-RelMan and product management decide if the feature will be enabled in Nightly, then:
+
+Once the bug for the feature has reached RESOLVED VERIFIED, then the lead for the feature which may be an engineer, a program manager, or a product manager must confirm with the Nightly Release Manager, and then enable it.
 
 *   The patch to flip the pref on should be attached to the "Make Tabby Cats the new default tab experience" bug
 
