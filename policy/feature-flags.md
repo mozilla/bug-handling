@@ -68,6 +68,17 @@ on merge day we would add
 
 and disable (but not delete) `release60`, `beta61`, and `nightly62`.
 
+#### ESR
+
+For tracking the feature in ESR, we create a `behind-pref-esr` status flag. It will be kept up with the values of the current and previous ESR releases. 
+
+_Example_
+
+- `---`
+- `off`
+- `esr59`
+- `esr60`
+
 ### Example
 
 A bug is filed, "Make Tabby Cats the default new tab experience." And the team developing this (engineering and product) decide that this should be controlled behind a preference, `browser.newtabpage.default.tabbycat`. The developers break the work for this feature down into three bugs.
@@ -103,6 +114,8 @@ Once the feature has been verfied by QA then:
 - the `behind-pref` flag is updated to `betaNN+1` 
 
 The feature now *rides the trains* to release, and on merge day, `behind-pref` is set to `nightlyNN`. The bug is then considered completed. 
+
+When the next ESR is released, the `behind-pref-esr` field should be set to the version where it was relased. 
 
 ### Questions 
 
