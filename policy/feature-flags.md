@@ -48,7 +48,7 @@ Where NN is the current relase version of Firefox.
   <dd>The feature is enabled by default in Firefox NN (Release), Beta and Nightly</dd>
   <dt>betaNN+1</dt>
   <dd>The feature is enabled by default in FirefoxNN+1 (Beta), and Nightly, but not Release</dd>
-  <dt>nightlyNN+2<dt>
+  <dt>nightlyNN+2</dt>
   <dd>The feature is enabled by default in FirefoxNN+2 (Nightly), but neither Beta or Release</dd>
 </dl>
 
