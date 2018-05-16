@@ -143,6 +143,10 @@ If you plan to incrementally add functionality to Nightly over a number of relea
 
 If you intend to implement functionality over a number of Beta and Release cycles, then each set of functionality should be treated as a separate `[meta]` bug subject to the process described in this document.
 
+#### What about gradual rollout of features
+
+If you intend to roll out the feature gradually, then the rollout should be tracked in the feature bug's comments. If the the rollout percentage is controlled by a preference, then changes to that preference should be blockers of the the feature bug.
+
 ### Tracking queries
 
 - Open bugs for features behind preferences
