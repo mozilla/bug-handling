@@ -93,7 +93,7 @@ A bug is filed, "Make Tabby Cats the default new tab experience." And the team d
 
 As the feature is developed and the individual patches implement it land, it's kept off by compiler directives, the pref, or both. As these land, and are not backed out, these bugs can be marked RESOLVED FIXED.
 
-Once the dependent bugs have been resolved, the feature can be enabled in nightly. The lead for the feature–which may be an engineer, a program manager, or a product manager–must notify the Nightly Release Manager before enabling it.
+The lead for the feature–which may be an engineer, a program manager, or a product manager–must notify the Nightly Release Manager before enabling it.
 
 - The `[meta]` bug's status is moved to RESOLVED and resolution to FIXED.
 - The bug's `behind-pref` flag is set to `nightlyNN+2` to indicate it's now available in nightly
@@ -129,13 +129,15 @@ The bug to turn off the feature must be a dependency of the main bug.
 
 #### What if we want to hold a feature over a release cycle and not promote it?
 
-On merge day, the `behind-pref` flag would change from the previous to the new Beta or Nightly value, and remain preffed off in other versions.
+On merge day, the `behind-pref` flag would retain it's earlier value, and remain preffed off in other versions.
 
 #### What if I want to enable parts of my feature in Nightly?
 
 If your feature is incomplete, but some functionality is avalable, then mark `behind-pref` as `nightlyNN+2`. Do not request `qe-verify` until the feature is complete.
 
-If you intend to release functionality over a number of releases, then each set of functionality should be treated as a separate `[meta]` bug subject to the process described in this document.
+If you plan to incrementally add functionality to Nightly over a number of release cycles, then you can use a single `meta` bug to keep track of functionality, but don't promote the feature to `Beta`.
+
+If you intend to implement functionality over a number of Beta and Release cycles, then each set of functionality should be treated as a separate `[meta]` bug subject to the process described in this document.
 
 ### Tracking queries
 
