@@ -4,19 +4,19 @@ Product and release need to track bugs whose visibility is controlled through a 
 
 ### Policy
 
-_A bug for a feature/fix that is controlled by a flag in Firefox preferences must do the following:_
+_The bug which tracks a feature or fix that is controlled by a flag in Firefox preferences must do the following:_
 
-_The bug **must** use the `behind-pref` flag. The leads for the feature would need to update the flags appropriately until the bug is closed._
+_It **must** use the `behind-pref` flag. The leads for the feature would need to update the flags appropriately until the bug is closed._
 
-_Any bug controlled by the `behind-pref` flag **must** be added to the Firefox Feature Trello board._
+_It **should** be added to the Firefox Feature Trello board._
 
-_The bug **must** state in a comment or the summary which preference will be used to manage visibility._
+_It **must** state in a comment or the summary which preference will be used to manage visibility._
 
-_The bug **must** request the `qe-verify` flag (setting it to `?`) and the bug **must** be verfified (Status: RESOLVED, Resolution: VERIFIED) by QA once they have accepted the `qe-verify` request (setting the flag to `+`) before the feature can be promoted to Beta._
+_It **must** request the `qe-verify` flag (setting it to `?`) and the bug **must** be verfified (Status: RESOLVED, Resolution: VERIFIED) by QA once they have accepted the `qe-verify` request (setting the flag to `+`) before the feature can be promoted to Beta._
 
-_The bug's severity **must** be set to `enhancement`._
+_The severity of the bug tracking the feature **must** be set to `enhancement`._
 
-_The Release Managers for each train must consent to the feature being enabled._
+_The Release Managers for each train must consent to the feature being enabled on that train._
 
 _QA **must** sign off on the feature before it is enabled in Beta._
 
