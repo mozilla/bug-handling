@@ -75,7 +75,7 @@ and disable (but not delete) `release60`, `beta61`, and `nightly62`.
 
 #### ESR
 
-For tracking the feature in ESR, we create a `behind-pref-esr` status flag. It will be kept up with the values of the current and previous ESR releases. 
+For tracking the feature in ESR, we create a `behind-pref-esr` status flag. It will be kept up with the values of the current,  previous, and next ESR releases. 
 
 _Example_
 
@@ -83,6 +83,7 @@ _Example_
 - `off`
 - `esr52`
 - `esr60`
+- `esr72`
 
 ### Example
 
@@ -118,9 +119,9 @@ Once the feature has been verfied by QA then:
 
 The feature now *rides the trains* to release. The bug is then considered completed. 
 
-If it's decided to hold the feature out of the next release and let Beta users try it out, then the `behind-pref` flag is set to `betaNN` where NN is the next beta. Once the decision is made to let the feature ride the trains, then it is updated to `releaseNN`.
+If it's decided to hold the feature out of the next release and let Beta users try it out, then the `behind-pref` flag is set to `betaNN` where NN is the next beta. Once the decision is made to let the feature ride the trains, then it is updated to `releaseNN` where NN is the target release.
 
-When the next ESR is released, the `behind-pref-esr` field should be set to the version where it was relased. 
+When the feature is merged to ESR the `behind-pref-esr` field should be set to the version where it will be relased. 
 
 ### Questions 
 
@@ -140,11 +141,11 @@ On merge day, the `behind-pref` flag would retain it's earlier value, and remain
 
 #### What if I want to enable parts of my feature in Nightly?
 
-If your feature is incomplete, but some functionality is avalable, then mark `behind-pref` as `nightlyNN+2`. Do not request `qe-verify` until the feature is complete.
+If your feature is incomplete, but some functionality is avalable, then mark `behind-pref` as `nightlyNN` where NN is the current nighty version. Do not request `qe-verify` until the feature is complete.
 
 If you plan to incrementally add functionality to Nightly over a number of release cycles, then you can use a single `meta` bug to keep track of functionality, but don't promote the feature to `Beta`.
 
-If you intend to implement functionality over a number of Beta and Release cycles, then each set of functionality should be treated as a separate `[meta]` bug subject to the process described in this document.
+If you intend to implement functionality over a number of Beta and Release cycles, then the tracking/meta bug should not be marked as FIXED VERIFIED until the feature is completed.
 
 #### What about gradual rollout of features
 
@@ -154,4 +155,5 @@ If you intend to roll out the feature gradually, then the rollout should be trac
 
 - Open bugs for features behind preferences
 - Open bugs for features behind preferences landed but not QAed
+- Bugs for features in upcoming release
 - Bugs for features which have been disabled 
