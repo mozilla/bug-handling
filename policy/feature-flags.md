@@ -4,6 +4,8 @@ Product and release need to track bugs whose visibility is controlled through a 
 
 ### Policy
 
+_For any feature or fix controlled by a preference flag in Firefox, there should be a single bug (e.g. a meta bug) to track its release. If the feature requires multiple bugs/patches then this should be a `meta` bug._
+
 _The bug which tracks a feature or fix that is controlled by a flag in Firefox preferences must do the following:_
 
 _It **must** use the `behind-pref` flag. The leads for the feature would need to update the flags appropriately until the bug is closed._
