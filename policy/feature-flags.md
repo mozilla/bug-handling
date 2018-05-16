@@ -105,7 +105,7 @@ Before the feature can graduate to Beta, it must be verified by QA.
 
 If the feature does not pass testing then QA should file bugs blocking the `[meta]` bug for the feature. QA and the development team must confer and decide if the feature will be disabled in Nightly, or allowed to be kept on while bugs are fixed. This will depend on risk and severity of the bugs found. 
 
-If it's decided to disable the feature, then it should be turned off in the nightly build and the `behind-pref` flag set to `off`. The bug's comments should explain why that decision was released. Once the defects have been resolved, then `behind-pref` can be reset to `nightlyNN+2`.
+If it's decided to disable the feature, then it should be turned off in the nightly build and the `behind-pref` flag set to `off`. The bug's comments should explain how that decision was reached. Once the defects have been resolved, then `behind-pref` can be reset to `nightlyNN+2`.
 
 Once the feature has been verfied by QA then:
 
