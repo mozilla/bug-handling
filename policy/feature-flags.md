@@ -100,11 +100,10 @@ As the feature is developed and the individual patches implement it land, it's k
 The lead for the feature–which may be an engineer, a program manager, or a product manager–must notify the Nightly Release Manager before enabling it.
 
 - The bug's `behind-pref` flag is set to `nightlyNN` where NN is the current version of nightly to indicate it's now available in nightly
-- The `qe-verify` flag is set to ?, requesting QA's attention
+- The `qe-verify` flag is set to +, requesting QA's attention
 
 Before the feature can graduate to Beta, it must be verified by QA. 
 
-- QA agrees to take on verfication, setting `qe-verify` to `+`
 - The feature is tested on nightly and confirmed to work as specified (implicit here is the feature team's involvement in creating a test plan)
 
 If the feature does not pass testing then QA should file bugs blocking the `[meta]` bug for the feature. QA and the development team must confer and decide if the feature will be disabled in Nightly, or allowed to be kept on while bugs are fixed. This will depend on risk and severity of the bugs found. 
@@ -113,9 +112,12 @@ If it's decided to disable the feature, then it should be turned off in the nigh
 
 Once the feature has been verfied by QA then:
 
-- QA moves the bug's status to VERIFIED and resolution to FIXED
 - The bug should be enabled in Beta once Release Management approves
 - the `behind-pref` flag is updated to `releaseNN` where NN is the next release. 
+
+Once the patch for the bug to enable in Beta lands:
+
+- QA moves the bug's status to VERIFIED and resolution to FIXED
 
 The feature now *rides the trains* to release. The bug is then considered completed. 
 
