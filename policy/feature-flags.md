@@ -60,7 +60,7 @@ If the current values of the flag were:
 
 - `release60`
 - `beta61`
-- `beta62`
+- `nightly62`
 
 on merge day we would add
 
@@ -78,7 +78,7 @@ _Example_
 
 - `---`
 - `off`
-- `esr59`
+- `esr52`
 - `esr60`
 
 ### Example
