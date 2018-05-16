@@ -127,6 +127,10 @@ The main bug's `behind-pref` value should be reset to the releases it's still on
 
 The bug to turn off the feature must be a dependency of the main bug.
 
+#### What about bugs found in a feature after release
+
+These bugs do not need the `behind-pref` flag. If it's decided that the feature should be turned off until the bug or bugs are fixed, then these bugs should block the original feature tracking bug.
+
 #### What if we want to hold a feature over a release cycle and not promote it?
 
 On merge day, the `behind-pref` flag would retain it's earlier value, and remain preffed off in other versions.
