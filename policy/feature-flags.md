@@ -47,25 +47,28 @@ Where NN is the current relase version of Firefox.
   <dt>off</dt>
   <dd>The code for this feature has landed in m-c but the feature is preffed-off in all releases</dd>
   <dt>releaseNN</dt>
-  <dd>The feature is enabled by default in Firefox NN (Release), Beta and Nightly</dd>
-  <dt>betaNN+1</dt>
-  <dd>The feature is enabled by default in FirefoxNN+1 (Beta), and Nightly, but not Release</dd>
-  <dt>nightlyNN+2</dt>
-  <dd>The feature is enabled by default in FirefoxNN+2 (Nightly), but neither Beta or Release</dd>
+  <dd>Feature was enabled in or will ride the trains to Release NN</dd>
+  <dt>betaNN</dt>
+  <dd>The feature was enabled in Beta NN and Nightly but not riding train to Release</dd>
+  <dt>nightlyNN</dt>
+  <dd>The feature was enabled in Nightly NN only</dd>
 </dl>
 
 #### Maintenance 
 
-If the current values of the flag were:
+If, as of release version 60, current values of the flag were:
 
 - `release60`
+- `release61`
+- `release62`
 - `beta61`
+- `beta62`
 - `nightly62`
 
 on merge day we would add
 
-- `release61`
-- `beta62`
+- `release63`
+- `beta63`
 - `nightly63`
 
 and disable (but not delete) `release60`, `beta61`, and `nightly62`.
@@ -83,19 +86,19 @@ _Example_
 
 ### Example
 
-A bug is filed, "Make Tabby Cats the default new tab experience." And the team developing this (engineering and product) decide that this should be controlled behind a preference, `browser.newtabpage.default.tabbycat`. The developers break the work for this feature down into three bugs.
+A bug is filed, "Make Tabby Cats the default new tab experience." And the team developing this (engineering and product) decide that this should be controlled behind a preference, `browser.newtabpage.default.tabbycat`. The developers break the work for this feature down into three bugs. A fourth bug will be used to track the preference flag.
 
 - The bug's summary is updated to `[meta] Make Tabby Cats the default new tab experience`
 - A comment is filed listing the name of the preference
 - The `behind-pref` flag is set to `in-progress`
 - The bug's severity is set to `enhancement`
-- The three implementation bugs should be marked as blocking the `[meta]` bug for the new feature
+- The three implementation bugs and the pref bug should be marked as blocking the `[meta]` bug for the new feature
 
 As the feature is developed and the individual patches implement it land, it's kept off by compiler directives, the pref, or both. As these land, and are not backed out, these bugs can be marked RESOLVED FIXED.
 
 The lead for the feature–which may be an engineer, a program manager, or a product manager–must notify the Nightly Release Manager before enabling it.
 
-- The bug's `behind-pref` flag is set to `nightlyNN+2` to indicate it's now available in nightly
+- The bug's `behind-pref` flag is set to `nightlyNN` where NN is the current version of nightly to indicate it's now available in nightly
 - The `qe-verify` flag is set to ?, requesting QA's attention
 
 Before the feature can graduate to Beta, it must be verified by QA. 
@@ -105,15 +108,17 @@ Before the feature can graduate to Beta, it must be verified by QA.
 
 If the feature does not pass testing then QA should file bugs blocking the `[meta]` bug for the feature. QA and the development team must confer and decide if the feature will be disabled in Nightly, or allowed to be kept on while bugs are fixed. This will depend on risk and severity of the bugs found. 
 
-If it's decided to disable the feature, then it should be turned off in the nightly build and the `behind-pref` flag set to `off`. The bug's comments should explain how that decision was reached. Once the defects have been resolved, then `behind-pref` can be reset to `nightlyNN+2`.
+If it's decided to disable the feature, then it should be turned off in the nightly build and the `behind-pref` flag set to `off`. The bug's comments should explain how that decision was reached. Once the defects have been resolved, then `behind-pref` can be reset to `nightlyNN`.
 
 Once the feature has been verfied by QA then:
 
 - QA moves the bug's status to VERIFIED and resolution to FIXED
 - The bug should be enabled in Beta once Release Management approves
-- the `behind-pref` flag is updated to `betaNN+1` 
+- the `behind-pref` flag is updated to `releaseNN` where NN is the next release. 
 
-The feature now *rides the trains* to release, and on merge day, `behind-pref` is set to `nightlyNN`. The bug is then considered completed. 
+The feature now *rides the trains* to release. The bug is then considered completed. 
+
+If it's decided to hold the feature out of the next release and let Beta users try it out, then the `behind-pref` flag is set to `betaNN` where NN is the next beta. Once the decision is made to let the feature ride the trains, then it is updated to `releaseNN`.
 
 When the next ESR is released, the `behind-pref-esr` field should be set to the version where it was relased. 
 
