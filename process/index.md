@@ -1,4 +1,4 @@
 # Process
 
 * Project/Team/Initiative Specific Metadata
-  * Performance
+  * [Performance](team/performance.md)
