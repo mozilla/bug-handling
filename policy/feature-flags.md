@@ -1,6 +1,6 @@
 ## Marking-up bugs for features behind a pref
 
-_**Note**: this policy is obsolete and will be replaced by a unified feature tracking policy under development._
+<p style="color: white; background-color: red;">_**Note**: this policy is obsolete and will be replaced by a unified feature tracking policy under development._</p>
 
 Product and release need to track bugs whose visibility is controlled through a pref. Once a feature has been QAed and approved for a release, the preference should be enabled. 
 
