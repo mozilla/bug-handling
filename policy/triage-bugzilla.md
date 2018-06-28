@@ -59,9 +59,17 @@ Also, as a release approaches, the release status of open, high priority (P1) bu
 
 An explanation of the release status field.
 
-### How Do I Handle Edge Cases
+### Questions and Edge Cases
 
-#### I don't have enough information
+#### This bug is a feature request
+
+Set the bug's severity to `enhancement` and state to `NEW`. This bug will be excluded from future triage queries.
+
+#### This bug's state is `UNCONFIRMED`
+
+Are there steps to reproduce? If not, needinfo the person who filed the bug, requesting steps to reproduce. You are not obligated to wait forever for a response, and bugs for which open requests for information go unanswered can be `RESOLVED` as `INCOMPLETE`.
+
+#### I don't have enough information to make a decision
 
 If you don't have a reproduction or confirmation, or have questions needinfo someone who can answer your question and finish triaging the bug when they reply.
 
@@ -69,9 +77,7 @@ If you don't have a reproduction or confirmation, or have questions needinfo som
 
 Mark it as a P3. 
 
-If it's a tracking bug, make sure has “[meta]” in the title and has the `meta` keyword added.
-
-If it’s a feature request, set the bug’s priority field to `enhancement`.
+If it's a tracking bug, make sure has “[meta]” in the title and has the `meta` keyword added. This will remove it from the list of untriaged bugs.
 
 #### Bug is in the wrong Component
 
