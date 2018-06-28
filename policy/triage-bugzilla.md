@@ -21,12 +21,12 @@ If you need to change who is responsible for triaging a bug in a component, plea
 As a triage owner the queries you should be following for your component are:
 
 * All open bugs in your component without a pending needinfo flag since start of current release cycle
-* All open, bugs with pending needinfo flags in your component which have not been modified in two weeks
+* All open bugs with pending needinfo flags in your component which have not been modified in two weeks
 * All bugs with active review requests in your component which have not been modified in five days
 
 The above queries are already in the triage tool.
 
-These bugs are reviewed in the week Regression Triage meeting
+These bugs are reviewed in the weekly Regression Triage meeting
 * Regressions without -status-firefoxNN decisions
 * Regressions without a regression range
 
