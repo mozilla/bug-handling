@@ -20,7 +20,7 @@ If you need to change who is responsible for triaging a bug in a component, plea
 
 As a triage owner the queries you should be following for your component are:
 
-* All open, confirmed bugs in your component without a pending needinfo flag since start of current release cycle
+* All open bugs in your component without a pending needinfo flag since start of current release cycle
 * All open, bugs with pending needinfo flags in your component which have not been modified in two weeks
 * All bugs with active review requests in your component which have not been modified in five days
 
