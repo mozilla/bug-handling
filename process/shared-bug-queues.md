@@ -6,6 +6,8 @@ Reviewers for change sets can be suggested at the product and component level, b
 
 Realizing that Bugzilla users can _watch_ other users, [Chris Cooper](https://mozillians.org/en-US/u/coop/) came up with the idea of having [a shared reviews alias for review requests](http://coopcoopbware.tumblr.com/post/170952242320/experiments-in-productivity-the-shared-bug-queue).
 
+If you want to watch a particular part of the tree in Mozilla Central, then [use the Herald tool](https://phabricator.services.mozilla.com/book/phabricator/article/herald/).
+
 ## Process
 
 1. Create a new bugzilla.mozilla.com account for an address which can receive mail. 
