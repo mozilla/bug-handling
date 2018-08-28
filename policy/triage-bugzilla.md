@@ -61,9 +61,9 @@ An explanation of the release status field.
 
 ### How Do I Handle Edge Cases
 
-#### I don't have enough information
+#### I need more information
 
-If you don't have a reproduction or confirmation, or have questions needinfo someone who can answer your question and finish triaging the bug when they reply.
+If you don't have a reproduction or confirmation, or have questions about how to proceed, `needinfo` the person who filed the bug, or someone who can answer.
 
 #### The `stalled` keyword
 
@@ -129,7 +129,7 @@ Remember that bugs which have no activity in a year are now reaped into the INAC
 
 ### Triage with me
 
-"One tool we use in addons is triage-with-me. Its a Firefox Add-on that sends all the pages you click on in bugzilla into a server which then sends the URL to everyone else in the triage." – Andy McKay
+> <q>One tool we use in addons is triage-with-me. Its a Firefox Add-on that sends all the pages you click on in bugzilla into a server which then sends the URL to everyone else in the triage.</q> – Andy McKay
 
 The upshot is, one person clicks on links in Bugzilla, the bugs open up on everyone else's computer.
 
