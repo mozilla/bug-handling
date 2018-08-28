@@ -123,8 +123,6 @@ Are there P2s you now know are lower priority, move to P3.
 
 Are their P3 bugs you now know you won’t get to? Either demote to P5 (will accept patch) or resolve as WONTFIX.
 
-Remember that bugs which have no activity in a year are now reaped into the INACTIVE resolution. 
-
 ## Tools
 
 ### Triage with me
