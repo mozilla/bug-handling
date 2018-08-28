@@ -65,6 +65,16 @@ An explanation of the release status field.
 
 If you don't have a reproduction or confirmation, or have questions needinfo someone who can answer your question and finish triaging the bug when they reply.
 
+#### The `stalled` keyword
+
+The extreme case of not-enough-information is one which cannot be answered with a `needinfo` request. The reporter has shared all they know about the bug, we are out of strategies to take to resolve it, but the bug should be kept open.
+
+Mark the bug as stalled by adding the `stalled` keyword to it. The keyword will remove it from the list of bugs to be triaged.
+
+The priority of `stalled` bugs should be '--' but other keywords may apply to them.
+
+Bugs which remain `stalled` for long periods of time should be reviewed, and closed if necessary.
+
 #### This doesn't fit into a P1, P2, P3, P4, or P5 framework
 
 Mark it as a P3. 
