@@ -67,7 +67,7 @@ If you don't have a reproduction or confirmation, or have questions needinfo som
 
 #### The `stalled` keyword
 
-The extreme case of not-enough-information is one which cannot be answered with a `needinfo` request. The reporter has shared all they know about the bug, and nobody has a answer at this time, but the bug should be kept open, but for now we are out of strategies to take to resolve it. 
+The extreme case of not-enough-information is one which cannot be answered with a `needinfo` request. The reporter has shared all they know about the bug, we are out of strategies to take to resolve it, but the bug should be kept open.
 
 Mark the bug as `stalled`, which will remove it from the list of bugs to be triaged.
 
