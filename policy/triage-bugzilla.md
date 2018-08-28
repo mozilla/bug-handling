@@ -20,13 +20,13 @@ If you need to change who is responsible for triaging a bug in a component, plea
 
 As a triage owner the queries you should be following for your component are:
 
-* All open, confirmed bugs in your component without a pending needinfo flag since start of current release cycle
-* All open, bugs with pending needinfo flags in your component which have not been modified in two weeks
+* All open bugs in your component without a pending needinfo flag since start of current release cycle
+* All open bugs with pending needinfo flags in your component which have not been modified in two weeks
 * All bugs with active review requests in your component which have not been modified in five days
 
 The above queries are already in the triage tool.
 
-These bugs are reviewed in the week Regression Triage meeting
+These bugs are reviewed in the weekly Regression Triage meeting
 * Regressions without -status-firefoxNN decisions
 * Regressions without a regression range
 
@@ -59,9 +59,17 @@ Also, as a release approaches, the release status of open, high priority (P1) bu
 
 An explanation of the release status field.
 
-### How Do I Handle Edge Cases
+### Questions and Edge Cases
 
-#### I need more information
+#### This bug is a feature request
+
+Set the bug's severity to `enhancement` and state to `NEW`. This bug will be excluded from future triage queries.
+
+#### This bug's state is `UNCONFIRMED`
+
+Are there steps to reproduce? If not, needinfo the person who filed the bug, requesting steps to reproduce. You are not obligated to wait forever for a response, and bugs for which open requests for information go unanswered can be `RESOLVED` as `INCOMPLETE`.
+
+#### I don't have enough information to make a decision
 
 If you don't have a reproduction or confirmation, or have questions about how to proceed, `needinfo` the person who filed the bug, or someone who can answer.
 
@@ -79,9 +87,7 @@ Bugs which remain `stalled` for long periods of time should be reviewed, and clo
 
 Mark it as a P3. 
 
-If it's a tracking bug, make sure has “[meta]” in the title and has the `meta` keyword added.
-
-If it’s a feature request, set the bug’s priority field to `enhancement`.
+If it's a tracking bug, make sure has “[meta]” in the title and has the `meta` keyword added. This will remove it from the list of untriaged bugs.
 
 #### Bug is in the wrong Component
 
