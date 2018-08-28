@@ -71,7 +71,17 @@ Are there steps to reproduce? If not, needinfo the person who filed the bug, req
 
 #### I don't have enough information to make a decision
 
-If you don't have a reproduction or confirmation, or have questions needinfo someone who can answer your question and finish triaging the bug when they reply.
+If you don't have a reproduction or confirmation, or have questions about how to proceed, `needinfo` the person who filed the bug, or someone who can answer.
+
+#### The `stalled` keyword
+
+The extreme case of not-enough-information is one which cannot be answered with a `needinfo` request. The reporter has shared all they know about the bug, we are out of strategies to take to resolve it, but the bug should be kept open.
+
+Mark the bug as stalled by adding the `stalled` keyword to it. The keyword will remove it from the list of bugs to be triaged.
+
+The priority of `stalled` bugs should be '--' but other keywords may apply to them.
+
+Bugs which remain `stalled` for long periods of time should be reviewed, and closed if necessary.
 
 #### This doesn't fit into a P1, P2, P3, P4, or P5 framework
 
@@ -119,13 +129,11 @@ Are there P2s you now know are lower priority, move to P3.
 
 Are their P3 bugs you now know you won’t get to? Either demote to P5 (will accept patch) or resolve as WONTFIX.
 
-Remember that bugs which have no activity in a year are now reaped into the INACTIVE resolution. 
-
 ## Tools
 
 ### Triage with me
 
-"One tool we use in addons is triage-with-me. Its a Firefox Add-on that sends all the pages you click on in bugzilla into a server which then sends the URL to everyone else in the triage." – Andy McKay
+> <q>One tool we use in addons is triage-with-me. Its a Firefox Add-on that sends all the pages you click on in bugzilla into a server which then sends the URL to everyone else in the triage.</q> – Andy McKay
 
 The upshot is, one person clicks on links in Bugzilla, the bugs open up on everyone else's computer.
 
