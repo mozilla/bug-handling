@@ -59,6 +59,33 @@ Also, as a release approaches, the release status of open, high priority (P1) bu
 
 An explanation of the release status field.
 
+### Regressions
+
+_A regression is a code change that degrades existing functionality or performance for the user._
+
+#### Is a regression
+
+* Facebook homepage does not render
+* Image elements do not appear in the DOM tree
+* CSS Grid rules are not recognized
+
+#### Is not a regression
+
+* A website dependent on an unimplented part of the CSS specification does not render as intended
+* Firefox implements a feature differently than the user expects it to
+* The reporter is requesting a new feature
+
+#### Handling regressions
+
+If a bug has been reported with the `regression` keyword added, or the bug has the `regression` keyword, then:
+
+* The commit which casued the regression should be found and noted in the bug
+* The bug will be reviewed at the [weekly regression triage meeting](https://wiki.mozilla.org/Platform#Weekly_Regression_Triage_Meeting)
+
+Unless a bug is resolved as invalid, wontfix, or a duplicate; or if the bug is marked as P5, it is expected that the bug will refer to the commit that caused the regression. 
+
+If the commit which caused the regression has not been found, add the `regressionrange-wanted`. 
+
 ### Questions and Edge Cases
 
 #### This bug is a feature request
