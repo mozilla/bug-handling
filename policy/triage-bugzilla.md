@@ -61,19 +61,23 @@ An explanation of the release status field.
 
 ### Regressions
 
-_A regression is a code change that degrades existing functionality or performance for the user._
+_A regression is a code change that degrades existing functionality or performance._
 
 #### Is a regression
 
 * Facebook homepage does not render
 * Image elements do not appear in the DOM tree
 * CSS Grid rules are not recognized
+* A new crash
+* Memory usage increased while typing in awesomebar
 
 #### Is not a regression
 
 * A website dependent on an unimplented part of the CSS specification does not render as intended
 * Firefox implements a feature differently than the user expects it to
 * The reporter is requesting a new feature
+* Refactoring code
+* A bug that is not dependent on a code change in Firefox [but from external factors](https://bugzilla.mozilla.org/describecomponents.cgi?product=External%20Software%20Affecting%20Firefox) (e.g. a new crash caused by a Windows update, or a change in anti-virus software)
 
 #### Handling regressions
 
@@ -84,7 +88,11 @@ If a bug has been reported with the `regression` keyword added, or the bug has t
 
 Unless a bug is resolved as invalid, wontfix, or a duplicate; or if the bug is marked as P5, it is expected that the bug will refer to the commit that caused the regression. 
 
-If the commit which caused the regression has not been found, add the `regressionrange-wanted`. 
+If the commit which caused the regression has not been found, add the `regressionrange-wanted` keyword.  
+
+Once the regression range has been found, the `regressionrange-wanted` keyword should be removed, and the status flags for each affected release in the range of commits set to `affected`. The triage owner for the component may decide to set the status of a bug as `wontfix` for current and future versions.
+
+If a bug is no longer considered a regression, the `regressionrange-wanted` keyword should be removed.
 
 ### Questions and Edge Cases
 
