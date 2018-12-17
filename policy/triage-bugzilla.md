@@ -63,7 +63,7 @@ An explanation of the release status field.
 
 #### This bug is a feature request
 
-Set the bug's severity to `enhancement` and state to `NEW`. This bug will be excluded from future triage queries.
+Set the bug's severity to `enhancement`, add the `feature` keyword if relevant and state to `NEW`. This bug will be excluded from future triage queries.
 
 #### This bug's state is `UNCONFIRMED`
 
