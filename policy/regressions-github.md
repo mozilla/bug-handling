@@ -1,12 +1,12 @@
 # Tracking Regressions in Firefox Components Managed in GitHub Projects
-Release Management and the weekly regression triage must be aware of the status of all reported regressions in order to assure we are not shipping known regressions in Firefox releases. 
+Release Management and the weekly regression triage must be aware of the status of all reported regressions in order to assure we are not shipping known regressions in Firefox releases.
 
-If a team is using GitHub to manage their part of the Firefox project, there’s a risk that those groups might not see a regression. 
+If a team is using GitHub to manage their part of the Firefox project, there’s a risk that those groups might not see a regression.
 
-We need an agreed to standard for how we keep track of these. 
+We need an agreed to standard for how we keep track of these.
 
 ## Policy
-*All Firefox components, even if their bugs are tracked off of Bugzilla, must have a component in Bugzilla.* 
+*All Firefox components, even if their bugs are tracked off of Bugzilla, must have a component in Bugzilla.*
 
 *If a regression bug is found in any of the release trains (Nightly, Beta, Release, or ESR) and the bug is in a Firefox component which uses an external repository, the regression must be tracked by a bug in Bugzilla (whether or not the component in question uses an external issue tracker).*
 
@@ -20,7 +20,7 @@ The bug **must** have the regression keyword.
 
 The bug **must** have release flags set.
 
-If the team works in an external bug tracker, then the Bugzilla bug **must** reference, using the see-also field, the URL of the bug in the external tracker. 
+If the team works in an external bug tracker, then the Bugzilla bug **must** reference, using the see-also field, the URL of the bug in the external tracker.
 
 The bug **must not** be RESOLVED until the code from the external repository containing the change set for the bug has landed in mozilla-central. When the change set lands in mozilla-central, the Bugzilla tracking bug should be set to RESOLVED FIXED and release status flags should be updated to reflect the release trains the fix has been landed or uplifted into.
 
@@ -28,7 +28,7 @@ If the change set containing the patch for the regression is reverted from mozil
 
 If the change set containing the patch for the bug is backed out, for any reason, the bug must be reopened and the status flags on the Bugzilla tracking bug updated.
 
-The team responsible for the component with the regression **should** strive to create a patch for mozilla-central which contains the fix for the bug alone, not a monolithic patch containing changes for several other bugs or features. 
+The team responsible for the component with the regression **should** strive to create a patch for mozilla-central which contains the fix for the bug alone, not a monolithic patch containing changes for several other bugs or features.
 
 Landings of third-party libraries [**must** contain a manifest file](https://docs.google.com/document/d/12ihxPXBo9zBBaU_pBsPrc_wNHds4Upr-PwFfiSHrbu8).
 

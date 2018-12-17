@@ -2,7 +2,7 @@
 
 <p style="color: white; background-color: red;">_**Note**: this policy is obsolete and will be replaced by a unified feature tracking policy under development._</p>
 
-Product and release need to track bugs whose visibility is controlled through a pref. Once a feature has been QAed and approved for a release, the preference should be enabled. 
+Product and release need to track bugs whose visibility is controlled through a pref. Once a feature has been QAed and approved for a release, the preference should be enabled.
 
 ### Policy
 
@@ -37,7 +37,7 @@ The `behind-pref` flag is a multi-valued release-status flag with the values
 - `betaNN+1`
 - `nightlyNN+2`
 
-Where NN is the current relase version of Firefox. 
+Where NN is the current release version of Firefox.
 
 #### Values and Meanings
 
@@ -56,7 +56,7 @@ Where NN is the current relase version of Firefox.
   <dd>The feature was enabled in Nightly NN only</dd>
 </dl>
 
-#### Maintenance 
+#### Maintenance
 
 If, as of release version 60, current values of the flag were:
 
@@ -77,7 +77,7 @@ and disable (but not delete) `release60`, `beta61`, and `nightly62`.
 
 #### ESR
 
-For tracking the feature in ESR, we create a `behind-pref-esr` status flag. It will be kept up with the values of the current,  previous, and next ESR releases. 
+For tracking the feature in ESR, we create a `behind-pref-esr` status flag. It will be kept up with the values of the current,  previous, and next ESR releases.
 
 _Example_
 
@@ -104,30 +104,30 @@ The lead for the feature–which may be an engineer, a program manager, or a pro
 - The bug's `behind-pref` flag is set to `nightlyNN` where NN is the current version of nightly to indicate it's now available in nightly
 - The `qe-verify` flag is set to +, requesting QA's attention
 
-Before the feature can graduate to Beta, it must be verified by QA. 
+Before the feature can graduate to Beta, it must be verified by QA.
 
 - The feature is tested on nightly and confirmed to work as specified (implicit here is the feature team's involvement in creating a test plan)
 
-If the feature does not pass testing then QA should file bugs blocking the `[meta]` bug for the feature. QA and the development team must confer and decide if the feature will be disabled in Nightly, or allowed to be kept on while bugs are fixed. This will depend on risk and severity of the bugs found. 
+If the feature does not pass testing then QA should file bugs blocking the `[meta]` bug for the feature. QA and the development team must confer and decide if the feature will be disabled in Nightly, or allowed to be kept on while bugs are fixed. This will depend on risk and severity of the bugs found.
 
 If it's decided to disable the feature, then it should be turned off in the nightly build and the `behind-pref` flag set to `off`. The bug's comments should explain how that decision was reached. Once the defects have been resolved, then `behind-pref` can be reset to `nightlyNN`.
 
 Once the feature has been verfied by QA then:
 
 - The bug should be enabled in Beta once Release Management approves
-- the `behind-pref` flag is updated to `releaseNN` where NN is the next release. 
+- the `behind-pref` flag is updated to `releaseNN` where NN is the next release.
 
 Once the patch for the bug to enable in Beta lands:
 
 - QA moves the bug's status to VERIFIED and resolution to FIXED
 
-The feature now *rides the trains* to release. The bug is then considered completed. 
+The feature now *rides the trains* to release. The bug is then considered completed.
 
 If it's decided to hold the feature out of the next release and let Beta users try it out, then the `behind-pref` flag is set to `betaNN` where NN is the next beta. Once the decision is made to let the feature ride the trains, then it is updated to `releaseNN` where NN is the target release.
 
-When the feature is merged to ESR the `behind-pref-esr` field should be set to the version where it will be relased. 
+When the feature is merged to ESR the `behind-pref-esr` field should be set to the version where it will be released.
 
-### Questions 
+### Questions
 
 #### What if we turn off the feature in the main release?
 
@@ -145,7 +145,7 @@ On merge day, the `behind-pref` flag would retain it's earlier value, and remain
 
 #### What if I want to enable parts of my feature in Nightly?
 
-If your feature is incomplete, but some functionality is avalable, then mark `behind-pref` as `nightlyNN` where NN is the current nighty version. Do not request `qe-verify` until the feature is complete.
+If your feature is incomplete, but some functionality is available, then mark `behind-pref` as `nightlyNN` where NN is the current nighty version. Do not request `qe-verify` until the feature is complete.
 
 If you plan to incrementally add functionality to Nightly over a number of release cycles, then you can use a single `meta` bug to keep track of functionality, but don't promote the feature to `Beta`.
 
@@ -160,4 +160,4 @@ If you intend to roll out the feature gradually, then the rollout should be trac
 - Open bugs for features behind preferences
 - Open bugs for features behind preferences landed but not QAed
 - Bugs for features in upcoming release
-- Bugs for features which have been disabled 
+- Bugs for features which have been disabled
