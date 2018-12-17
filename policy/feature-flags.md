@@ -37,7 +37,7 @@ The `behind-pref` flag is a multi-valued release-status flag with the values
 - `betaNN+1`
 - `nightlyNN+2`
 
-Where NN is the current relase version of Firefox.
+Where NN is the current release version of Firefox.
 
 #### Values and Meanings
 
@@ -125,7 +125,7 @@ The feature now *rides the trains* to release. The bug is then considered comple
 
 If it's decided to hold the feature out of the next release and let Beta users try it out, then the `behind-pref` flag is set to `betaNN` where NN is the next beta. Once the decision is made to let the feature ride the trains, then it is updated to `releaseNN` where NN is the target release.
 
-When the feature is merged to ESR the `behind-pref-esr` field should be set to the version where it will be relased.
+When the feature is merged to ESR the `behind-pref-esr` field should be set to the version where it will be released.
 
 ### Questions
 
@@ -145,7 +145,7 @@ On merge day, the `behind-pref` flag would retain it's earlier value, and remain
 
 #### What if I want to enable parts of my feature in Nightly?
 
-If your feature is incomplete, but some functionality is avalable, then mark `behind-pref` as `nightlyNN` where NN is the current nighty version. Do not request `qe-verify` until the feature is complete.
+If your feature is incomplete, but some functionality is available, then mark `behind-pref` as `nightlyNN` where NN is the current nighty version. Do not request `qe-verify` until the feature is complete.
 
 If you plan to incrementally add functionality to Nightly over a number of release cycles, then you can use a single `meta` bug to keep track of functionality, but don't promote the feature to `Beta`.
 

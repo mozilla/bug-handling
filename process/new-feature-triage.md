@@ -7,7 +7,7 @@
 * Bugs marked severity = `enhancement`
 * Bugs with `feature` or similar in whiteboard or short description
 * `[RFE]` in whiteboard, short description, or description
-* Bugs not explicity marked as a feature request, but appear to be feature requests
+* Bugs not explicitly marked as a feature request, but appear to be feature requests
 * Bugs marked with `feature` keyword
 
 ### Sinks
