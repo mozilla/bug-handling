@@ -85,7 +85,7 @@ Bugs which remain `stalled` for long periods of time should be reviewed, and clo
 
 #### This doesn't fit into a P1, P2, P3, P4, or P5 framework
 
-Mark it as a P3. 
+Mark it as a P3.
 
 If it's a tracking bug, make sure has “[meta]” in the title and has the `meta` keyword added. This will remove it from the list of untriaged bugs.
 
@@ -105,9 +105,9 @@ We have a guide for GitHub projects to follow when triaging.
 
 Don't let open needinfo flags linger for more than two weeks.
 
-Close minor bugs with unresponded needinfo flags. 
+Close minor bugs with unresponded needinfo flags.
 
-Follow up on needinfo flag requests. 
+Follow up on needinfo flag requests.
 
 The tool will help you find these (the query is imperfect.)
 
@@ -115,9 +115,9 @@ The tool will help you find these (the query is imperfect.)
 
 #### Review P1s
 
-Are there unresolved P1s? 
+Are there unresolved P1s?
 
-Revisit their priority, and move to backlog (P3.) 
+Revisit their priority, and move to backlog (P3.)
 
 #### Review P2s
 

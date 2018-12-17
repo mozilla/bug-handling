@@ -5,4 +5,4 @@
 * Project/Team/Initiative Specific Metadata
   * Performance
 * Reviews
-  * [Shared review queues](process/shared-bug-queues.md) 
+  * [Shared review queues](process/shared-bug-queues.md)

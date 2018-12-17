@@ -17,7 +17,7 @@ The majority of requests will be handled as:
 * `RESOLVED WONTFIX`
 * `RESOLVED DUPLICATE`
 * priority = `P5`
-  
+
 Some will become backlogged feature requests.
 
 ## Process
@@ -42,7 +42,7 @@ Some will become backlogged feature requests.
   * Close bug as `RESOLVED WONTFIX` with comment as to why and thanking submitter
   * Set bug to `P5` priority with comment thanking submitter, and suggesting community submit an implementation
   * Set bug to `P3` priority with comment thanking submitter, and explaining next steps in product process (without promising implementation)
-  
+
 ### Periodic Reviews
 
 #### Duplicated Requests
