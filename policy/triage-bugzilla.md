@@ -59,6 +59,15 @@ Also, as a release approaches, the release status of open, high priority (P1) bu
 
 An explanation of the release status field.
 
+### Automatic Triage Overrides
+
+When a bug is tracked for a release, i.e. the `tracking_firefoxNN` flag is set to `+` triage decisons will be overriden, or made as follows:
+
+- If a bug is tracked for beta or release, its priority will be set to `P1`
+- If a bug is tracked for nightly, its priority will be set to `P2`
+
+Because bugs can be bumped in priority it's essental that triage owners review their [`P1`](https://bugzilla.mozilla.org/buglist.cgi?priority=P1&f1=triage_owner&o1=equals&resolution=---&v1=%25user%25) and [`P2`](https://bugzilla.mozilla.org/buglist.cgi?priority=P2&f1=triage_owner&o1=equals&resolution=---&v1=%25user%25) bugs frequently. 
+
 ### Questions and Edge Cases
 
 #### This bug is a feature request
