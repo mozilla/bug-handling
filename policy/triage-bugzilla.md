@@ -1,5 +1,9 @@
 # Triage Process for Firefox Components in Mozilla-central and Bugzilla
 
+## Expectations
+
+All teams working on Firefox using either or both Mozilla-central and Bugzilla are expected to follow the following process. *Exceptions must be approved by Release Management and the VP of Firefox Engineering*.
+
 ## Why Triage
 Staying on top of the bugs in your component means:
 
