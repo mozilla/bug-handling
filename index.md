@@ -6,6 +6,6 @@ title: Home
 
 <ul class="policies">
     {% for policy in site.policies %}
-    <li><a href="{{ policy.url }}" title="{{ policy.title }}">{{ post.title }}</a></li>
+    <li><a href="{{ policy.url }}" title="{{ policy.title }}">{{ policy.title }}</a></li>
     {% endfor %}
 </ul>
