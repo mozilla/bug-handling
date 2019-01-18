@@ -1,3 +1,7 @@
+---
+layout: default
+title: Triage for Bugzilla
+---
 # Triage Process for Firefox Components in Mozilla-central and Bugzilla
 
 ## Expectations
