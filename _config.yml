@@ -1,3 +1,4 @@
 name: Firefox Bug Handling
 markdown: kramdown
 author: emma@mozilla.com
+permalink: /policies/:title
