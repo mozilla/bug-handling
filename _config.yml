@@ -1,2 +1,3 @@
-	name: Firefox Bug Handling
-	markdown: kramdown
+name: Firefox Bug Handling
+markdown: kramdown
+author: emma@mozilla.com
