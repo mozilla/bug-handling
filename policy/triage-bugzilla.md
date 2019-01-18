@@ -82,6 +82,15 @@ The headers of the table are values of the status flag. Each column are the stat
 * "wontfix" - we have decided not to accept/uplift a fix for this release cycle (it is not the same as the bug resolution WONTFIX)
 * "fix-optional" - we take a fix for the current release but don't consider it as important/blocking for the release
 
+### Automatic Triage Overrides
+
+When a bug is tracked for a release, i.e. the `tracking_firefoxNN` flag is set to `+` or `blocking` triage decisions will be overriden, or made as follows:
+
+- If a bug is tracked for or blocking beta, release or ESR, its priority will be set to `P1`
+- If a bug is tracked for or blocking nightly, its priority will be set to `P2`
+
+Because bugs can be bumped in priority it's essential that triage owners review their [`P1`](https://bugzilla.mozilla.org/buglist.cgi?priority=P1&f1=triage_owner&o1=equals&resolution=---&v1=%25user%25) and [`P2`](https://bugzilla.mozilla.org/buglist.cgi?priority=P2&f1=triage_owner&o1=equals&resolution=---&v1=%25user%25) bugs frequently. 
+
 ### Questions and Edge Cases
 
 #### This bug is a feature request
