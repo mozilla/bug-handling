@@ -1,3 +1,8 @@
+---
+layout: default
+title: Triage Priorities
+---
+
 # How to prioritize defects and enhancements
 
 Our work *must* be focused on Mozilla's objectives, and as you triage bugs you should prioritize accordingly.
@@ -13,7 +18,7 @@ should be the highest priorities.
 ## Performance
 
 * Use the perf keyword
-* Add [qf:?] if you think the Perf team should look at this (*[are we still using the qf:? tag](https://bugzilla.mozilla.org/show_bug.cgi?id=1512540)*)
+* Add [qf:?] if you think the Performance team should look at this bug
 
 ## Privacy
 
