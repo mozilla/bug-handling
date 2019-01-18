@@ -71,10 +71,10 @@ The headers of the table are values of the status flag. Each column are the stat
 * "?" we don't know whether Firefox N is affected, but we want to find out.
 * "affected" - present in this release
 * "unaffected" - not present in this release
-* "fixed" - we landed a fix
-* "verified" - the fix has been verified by QA
+* "fixed" - a contributor has landed code in Mozilla Central to fix this
+* "verified" - the fix has been verified by QA or other contributors
 * "disabled" - the fix has been backed out or disabled
-* "verified disabled" - QA has confirmed the fix has been backed out or disabled
+* "verified disabled" - QA or other contributors confirmed the fix has been backed out or disabled
 * "wontfix" - we have decided not to accept/uplift a fix for this release cycle (it is not the same as the bug resolution WONTFIX)
 * "fix-optional" - we take a fix for the current release but don't consider it as important/blocking for the release
 
