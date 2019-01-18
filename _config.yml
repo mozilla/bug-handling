@@ -2,5 +2,6 @@ name: Firefox Bug Handling
 markdown: kramdown
 author: emma@mozilla.com
 collections:
-	- policies
+  policies:
+    output: true
 permalink: /policies/:title
