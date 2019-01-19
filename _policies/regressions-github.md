@@ -1,7 +1,6 @@
 ---
 title: Regressions from GitHub
 layout: policy
-published: true
 description: Tracking Regressions in Firefox Components Managed in GitHub Projects
 ---
 
