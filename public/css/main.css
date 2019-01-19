@@ -5,8 +5,9 @@
 
 body {
   margin: auto;
-  padding: 2vw;
-  width: 60vw;
+  padding-top: 2vh;
+  padding-bottom: 5vh;
+  width: 90vw;
 }
 
 a {
@@ -44,4 +45,10 @@ td {
 
 tr:nth-of-type(2n-1) td {
   background-color: #f0f0f0;
+}
+
+@media (min-width gte 900px) {
+  body { 
+    width: 60vw; 
+  }
 }
