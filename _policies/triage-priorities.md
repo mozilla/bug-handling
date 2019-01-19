@@ -1,5 +1,5 @@
 ---
-layout: policies
+layout: policy
 title: Triage Priorities
 description: How to prioritize defects and enhancements
 ---
