@@ -47,7 +47,7 @@ tr:nth-of-type(2n-1) td {
   background-color: #f0f0f0;
 }
 
-@media (min-width gte 900px) {
+@media (min-width >= 900px) {
   body { 
     width: 60vw; 
   }
