@@ -56,7 +56,7 @@ For each bug decide priority (you can override what's already been set, as a tri
     <dt>P4</dt>
     <dd>Maintained by bots<dd>
     <dt>P5</dt>
-    <dd>Will not fix, but will accept a patch<dd>
+    <dd>Will not fix, but will accept a patch</dd>
 </dl>
 
 ### What About Release Status (status_firefoxNN) Flags
