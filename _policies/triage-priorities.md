@@ -16,12 +16,12 @@ should be the highest priorities.
 
 ## Performance
 
-* Use the perf keyword
-* Add [qf:?] if you think the Performance team should look at this bug
+* Use the `perf` keyword
+* Add `[qf:?]` to the whiteboard if you think the Performance team should look at this bug
 
 ## Privacy
 
-* Use the privacy keyword
+* Use the `privacy` keyword
 
 ## User Security
 
