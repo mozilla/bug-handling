@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Triage Priorities
+description: How to prioritize defects and enhancements
 ---
-
-# How to prioritize defects and enhancements
 
 Our work *must* be focused on Mozilla's objectives, and as you triage bugs you should prioritize accordingly.
 
