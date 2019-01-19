@@ -4,4 +4,4 @@ author: emma@mozilla.com
 collections:
   policies:
     output: true
-permalink: /policies/:title
+    permalink: /:collection/:title
