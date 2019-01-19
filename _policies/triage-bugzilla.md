@@ -1,5 +1,5 @@
 ---
-layout: policies
+layout: policy
 title: Triage for Bugzilla
 description: Triage Process for Firefox Components in Mozilla-central and Bugzilla
 ---
