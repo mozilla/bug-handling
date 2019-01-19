@@ -46,18 +46,13 @@ There's a tool to help you find bugs https://mozilla.github.io/triage-center/ an
 
 For each bug decide priority (you can override what's already been set, as a triage lead, you are the decider.)
 
-<dl>
-    <dt>P1</dt>
-    <dd>Fix in the current release or iteration</dd>
-    <dt>P2</dt>
-    <dd>Fix in the next release or iteration<dd>
-    <dt>P3</dt>
-    <dd>Backlog<dd>
-    <dt>P4</dt>
-    <dd>Maintained by bots<dd>
-    <dt>P5</dt>
-    <dd>Will not fix, but will accept a patch</dd>
-</dl>
+| Priority: | Description |
+| -- | No decision |
+| P1 | Fix in the current release or iteration |
+| P2 | Fix in the next release or iteration |
+| P3 | Backlog |
+| P4 | Do not use, this priority is for web platform test bots |
+| P5 | Will not fix, but will accept a patch |
 
 ### What About Release Status (status_firefoxNN) Flags
 
