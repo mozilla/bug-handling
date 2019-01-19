@@ -26,3 +26,17 @@ h2 {
   font-weight: 600;
   align-self: center;
 }
+
+table {
+  margin: auto;
+  width: 50%;
+}
+
+tr td {
+  border-top: solid 1px black;
+  min-width: 5vw;
+}
+
+tr:nth-of-type(2n-1) td {
+  background-color: #f0f0f0;
+}
