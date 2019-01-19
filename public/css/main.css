@@ -29,12 +29,17 @@ h2 {
 
 table {
   margin: auto;
-  width: 50%;
+  width: 60%;
+  border-collapse: collapse;
 }
 
-tr td {
+th, td {
+  padding-right: .25vw;
+}
+
+td {
   border-top: solid 1px black;
-  min-width: 5vw;
+  min-width: 4vw;
 }
 
 tr:nth-of-type(2n-1) td {
