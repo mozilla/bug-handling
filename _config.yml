@@ -4,4 +4,4 @@ author: emma@mozilla.com
 collections:
   policies:
     output: true
-    permalink: :title
+    permalink: /bug-handling/:title
