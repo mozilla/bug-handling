@@ -4,10 +4,9 @@
 }
 
 body {
-  margin: 0;
+  margin: auto;
   padding: 2vw;
-  height: 100vh;
-  width: 100%;
+  width: 60vw;
 }
 
 a {
