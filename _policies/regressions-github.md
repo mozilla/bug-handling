@@ -1,4 +1,10 @@
-# Tracking Regressions in Firefox Components Managed in GitHub Projects
+---
+title: Regressions from GitHub
+layout: policy
+published: true
+description: Tracking Regressions in Firefox Components Managed in GitHub Projects
+---
+
 Release Management and the weekly regression triage must be aware of the status of all reported regressions in order to assure we are not shipping known regressions in Firefox releases.
 
 If a team is using GitHub to manage their part of the Firefox project, there’s a risk that those groups might not see a regression.
