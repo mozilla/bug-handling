@@ -28,21 +28,19 @@ If you need to change who is responsible for triaging a bug in a component, plea
 
 As a triage owner the queries you should be following for your component are:
 
-* All open bugs in your component without a pending needinfo flag since start of current release cycle
-* All open bugs with pending needinfo flags in your component which have not been modified in two weeks
+* All open bugs of type `defect` in your component without a pending `needinfo` flag or a `stalled` keyword since start of current release cycle which do not have a priorty set
+* All open bugs of type `defect` with pending needinfo flags in your component which have not been modified in two weeks
 * All bugs with active review requests in your component which have not been modified in five days
 
-The above queries are already in the triage tool.
+There's a tool to help you find bugs https://mozilla.github.io/triage-center/ and the source is at https://github.com/mozilla/triage-center/.
 
 These bugs are reviewed in the weekly Regression Triage meeting
-* Regressions without -status-firefoxNN decisions
-* Regressions without a regression range
+* Bugs of type `defect` with the `regression` keyword without -status-firefoxNN decisions
+* Bugs of type `defect` with the `regression` keyword without a regression range
 
 ## How Do You Triage
 
-Weekly or More Frequently (depending on the component) find un-triaged bugs in your component.
-
-There's a tool to help you find bugs https://mozilla.github.io/triage-center/ and the source is at https://github.com/mozilla/triage-center/.
+Weekly or More Frequently (depending on the component) find [un-triaged bugs in the components you triage](https://bugzilla.mozilla.org/buglist.cgi?f1=triage_owner&bug_type=defect&o1=equals&resolution=---&priority=--&v1=%25user%25).
 
 For each bug decide priority (you can override what's already been set, as a triage lead, you are the decider.)
 
@@ -95,7 +93,13 @@ Because bugs can be bumped in priority it's essential that triage owners review 
 
 #### This bug is a feature request
 
-Set the bug's severity to `enhancement`, add the `feature` keyword if relevant and state to `NEW`. This bug will be excluded from future triage queries.
+Set the bug's type to `enhancement`, add the `feature` keyword if relevant, and state to `NEW`. This bug will be excluded from future triage queries.
+
+#### This bug is a task, not a defect
+
+Set the bug's type to `task`, and state to `NEW`. This bug will be excluded from future triage queries.
+
+If you are not sure of a bug's type, check [our rules for bug types](https://mozilla.github.io/task-defect-enhancement/index.html).
 
 #### This bug's state is `UNCONFIRMED`
 
