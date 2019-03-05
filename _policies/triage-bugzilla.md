@@ -41,7 +41,7 @@ These bugs are reviewed in the weekly Regression Triage meeting
 
 Weekly or More Frequently (depending on the component) find un-triaged bugs in your component.
 
-There's a tool to help you find bugs https://mozilla.github.io/triage-center/ and the source is at https://github.com/mozilla/triage-center/.
+There's a tool to help you find bugs <https://mozilla.github.io/triage-center/> and the source is at <https://github.com/mozilla/triage-center/>.
 
 For each bug decide priority (you can override what's already been set, as a triage lead, you are the decider.)
 
@@ -168,9 +168,9 @@ Are their P3 bugs you now know you won’t get to? Either demote to P5 (will acc
 
 The upshot is, one person clicks on links in Bugzilla, the bugs open up on everyone else's computer.
 
-* https://addons.mozilla.org/en-US/firefox/addon/triage-with-me/
-* http://www.agmweb.ca/2013-09-06-triage/
-* http://www.agmweb.ca/2015-03-10-triage-with-me-update/
+* <https://addons.mozilla.org/en-US/firefox/addon/triage-with-me/>.
+* <http://www.agmweb.ca/2013-09-06-triage/>
+* <http://www.agmweb.ca/2015-03-10-triage-with-me-update/>
 
 ## Questions
 
