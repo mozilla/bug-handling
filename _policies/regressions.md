@@ -22,7 +22,7 @@ These things are true about regressions:
 - **Status_FirefoxNN** is `affected` for each version (in current nightly, beta, and release) of Firefox in which the bug was found
 - The bug's description covers previously working behavior which is no longer working [ed. I need a better phrase for this]
 
-Until the change set which caused the regression has been found through [moz-regression]() or another bisection tool, the bug should also have the `regressionwindow-wanted` keyword. 
+Until the change set which caused the regression has been found through [mozregression](https://mozilla.github.io/mozregression/) or another bisection tool, the bug should also have the `regressionwindow-wanted` keyword. 
 
 Once the change set which caused the regression has been identified, remove the `regressionwindow-wanted` keyword and set the **Regressed By** field to the id of the bug associated with the change set.
 
