@@ -5,6 +5,10 @@ published: true
 description: Marking-up regressions
 ---
 
+# Regressions
+
+For regression bugs in Mozilla-Central, our policy is to tag the bug as a regression, identify the commits which caused the regression, then mark the bugs associated with those commits as causing the regression. 
+
 # What is a regression?
 
 A regression is a bug (in our scheme a `defect`) introduced by a change set. 
