@@ -11,7 +11,7 @@ For regression bugs in Mozilla-Central, our policy is to tag the bug as a regres
 
 # What is a regression?
 
-A regression is a bug (in our scheme a `defect`) introduced by a change set. 
+A regression is a bug (in our scheme a `defect`) introduced by a [changeset](https://en.wikipedia.org/wiki/Changeset). 
 
 - Bug 101 *fixes* Bug 100 with Change Set A
 - Bug 102 *reported which describes previously correct behavior now not happening*
