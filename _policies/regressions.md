@@ -32,6 +32,8 @@ Once the change set which caused the regression has been identified, remove the 
 
 Setting the **Regressed By** field will update the **Regresses** field in the other bug. 
 
+Set a needinfo for the author of the regressing patch asking them to fix or revert the regression.
+
 # Previous Method 
 
 Previously we over-loaded the **Blocks** and **Blocked By** fields to track the regression, setting **Blocks** to the id of the bug associated with the change set causing the regression, and using the `regression`, `regressionwindow-wanted` keywords and the status flags as described above.
