@@ -5,11 +5,11 @@ published: true
 description: Marking-up regressions
 ---
 
-# Regressions
+## Regressions
 
 For regression bugs in Mozilla-Central, our policy is to tag the bug as a regression, identify the commits which caused the regression, then mark the bugs associated with those commits as causing the regression. 
 
-# What is a regression?
+## What is a regression?
 
 A regression is a bug (in our scheme a `defect`) introduced by a [changeset](https://en.wikipedia.org/wiki/Changeset). 
 
@@ -17,7 +17,7 @@ A regression is a bug (in our scheme a `defect`) introduced by a [changeset](htt
 - Bug 102 *reported which describes previously correct behavior now not happening*
 - Bug 102 *investigated and found to be introduced by Change Set A*
 
-# Marking a Regression Bug
+## Marking a Regression Bug
 
 These things are true about regressions:
 
@@ -34,12 +34,12 @@ Setting the **Regressed By** field will update the **Regresses** field in the ot
 
 Set a needinfo for the author of the regressing patch asking them to fix or revert the regression.
 
-# Previous Method 
+## Previous Method 
 
 Previously we over-loaded the **Blocks** and **Blocked By** fields to track the regression, setting **Blocks** to the id of the bug associated with the change set causing the regression, and using the `regression`, `regressionwindow-wanted` keywords and the status flags as described above.
 
 This made it difficult to understand what was a dependency and what was a regression when looking at dependency trees in Bugzilla.
 
-# FAQs
+## FAQs
 
 *To be written* 
