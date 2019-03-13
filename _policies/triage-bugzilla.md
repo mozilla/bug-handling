@@ -47,8 +47,8 @@ For each bug decide priority (you can override what's already been set, as a tri
 | Priority | Description |
 | ---: | --- |
 | -- | No decision |
-| P1 | Fix in the current release or iteration |
-| P2 | Fix in the next release or iteration |
+| P1 | Fix in the current release cycle (nightly) |
+| P2 | Fix in the next release cycle or the following (nightly + 1 or nightly + 2) |
 | P3 | Backlog |
 | P4 | Do not use, this priority is for web platform test bots |
 | P5 | Will not fix, but will accept a patch |
@@ -173,9 +173,9 @@ Are their P3 bugs you now know you won’t get to? Either demote to P5 (will acc
 
 The upshot is, one person clicks on links in Bugzilla, the bugs open up on everyone else's computer.
 
-* https://addons.mozilla.org/en-US/firefox/addon/triage-with-me/
-* http://www.agmweb.ca/2013-09-06-triage/
-* http://www.agmweb.ca/2015-03-10-triage-with-me-update/
+* <https://addons.mozilla.org/en-US/firefox/addon/triage-with-me/>.
+* <http://www.agmweb.ca/2013-09-06-triage/>
+* <http://www.agmweb.ca/2015-03-10-triage-with-me-update/>
 
 ## Questions
 

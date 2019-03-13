@@ -1,5 +1,7 @@
 name: Firefox Bug Handling
 markdown: kramdown
+kramdown:
+  auto_ids: true
 author: emma@mozilla.com
 collections:
   policies:
