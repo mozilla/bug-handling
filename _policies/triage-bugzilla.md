@@ -28,7 +28,7 @@ If you need to change who is responsible for triaging a bug in a component, plea
 
 As a triage owner the queries you should be following for your component are:
 
-* All open bugs of type `defect` in your component without a pending `needinfo` flag or a `stalled` keyword since start of current release cycle which do not have a priorty set
+* All open bugs, priortizing those of type `defect` in your component without a pending `needinfo` flag or a `stalled` keyword since start of current release cycle which do not have a priorty set
 * All open bugs of type `defect` with pending needinfo flags in your component which have not been modified in two weeks
 * All bugs with active review requests in your component which have not been modified in five days
 
@@ -38,7 +38,9 @@ These bugs are reviewed in the weekly Regression Triage meeting
 * Bugs of type `defect` with the `regression` keyword without -status-firefoxNN decisions
 * Bugs of type `defect` with the `regression` keyword without a regression range
 
-## How Do You Triage
+If a bug is an enhancement it needs a priority set and a target release or program milestone. These bugs are normally reviewed by product managers. Enhancements can lead to release notes and QA needed that we also need to know about
+
+If a bug is a task resulting in a changeset, release managers will need to known when this work will be done. A task such as refactoring fragile code can be risky.
 
 Weekly or More Frequently (depending on the component) find [un-triaged bugs in the components you triage](https://bugzilla.mozilla.org/buglist.cgi?f1=triage_owner&bug_type=defect&o1=equals&resolution=---&priority=--&v1=%25user%25).
 
