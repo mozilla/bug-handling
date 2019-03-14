@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif
+}
+
+body {
+  margin: 0;
+  padding: 2vh 2vw;
+  height: 96vh;
+  width: 100%;
+  font-size: 4vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+  line-height: 120%;
+  font-family: 'Zilla Slab Highlight', serif;
+  font-weight: bold;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Zilla Slab', serif;
+  font-weight: 600;
+  align-self: center;
+}
+
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+  text-align: center;
+  display: inline;
+}
+
+li::after {
+  content: ' • ';
+}
+
+li:last-of-type::after {
+  content: none
+}
+
+header {
+  min-height: 30vh; 
+}
+
+main {
+  min-height: 54vh; 
+}
+
+footer {
+  min-height: 10vh;
+} 
