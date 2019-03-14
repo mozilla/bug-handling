@@ -1,4 +1,9 @@
-# New Feature Triage
+---
+title: New Feature Triage
+layout: policy
+published: false
+description: How requests for features are triaged
+---
 
 ## Flows
 
