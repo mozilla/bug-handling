@@ -11,7 +11,7 @@ Bugs which request new features or enhancements should be of type=`enhancement`.
 
 Older bugs may also be feature requests if some or all of the following are true:
 
-* ~Bugs marked severity = `enhancement`~ This has gone away with the switch to [bug types](https://bugzilla.mozilla.org/show_bug.cgi?id=1522340)
+* ~Bugs marked severity = `enhancement`~ *(This has gone away with the switch to [bug types](https://bugzilla.mozilla.org/show_bug.cgi?id=1522340))*
 * Bugs with `feature` or similar in whiteboard or short description
 * `[RFE]` in whiteboard, short description, or description
 * Bugs not explicitly marked as a feature request, but appear to be feature requests
