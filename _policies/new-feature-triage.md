@@ -1,7 +1,7 @@
 ---
 title: New Feature Triage
 layout: policy
-published: false
+published: true
 description: How requests for features are triaged
 ---
 
