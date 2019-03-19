@@ -10,9 +10,18 @@ title: Home
     {% endfor %}
 </ul>
 
-## Other Information
+## Processes
+
 <ul class="policies">
-    {% for poster in site.posters %}
-    <li><a href=".{{poster.url}}" title="{{ poster.description }}">{{ poster.title }}</a></li>
+    {% for process in site.processes %}
+    <li><a href=".{{process.url}}" title="{{ process.description }}">{{ process.title }}</a></li>
+    {% endfor %}
+</ul>
+
+## Guides
+
+<ul class="policies">
+    {% for guide in site.guides %}
+    <li><a href=".{{guide.url}}" title="{{ guide.description }}">{{ guide.title }}</a></li>
     {% endfor %}
 </ul>
