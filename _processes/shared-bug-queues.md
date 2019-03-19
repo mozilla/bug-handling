@@ -1,5 +1,5 @@
 ---
-template: page
+template: policy
 title: Shared Bug Queues
 summary: Shared Bug Queues allow teams of people to monitor requests for bug reviews in Bugzilla.
 
