@@ -1,8 +1,8 @@
 ---
-template: policy
+layout: policy
 title: Shared Bug Queues
 summary: Shared Bug Queues allow teams of people to monitor requests for bug reviews in Bugzilla.
-
+published: true
 ---
 
 Reviewers for change sets can be suggested at the product and component level, but only the person who has been asked to review code will be notified.
