@@ -7,7 +7,7 @@ collections:
   policies:
     output: true
     permalink: :title
-  posters:
+  processes:
     output: true
     permalink: :title
   guides:
