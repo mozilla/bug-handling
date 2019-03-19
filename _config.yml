@@ -10,3 +10,6 @@ collections:
   posters:
     output: true
     permalink: :title
+  guides:
+    output: true
+    permalink: :title
