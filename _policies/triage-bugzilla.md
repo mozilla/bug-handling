@@ -47,7 +47,7 @@ Weekly or More Frequently (depending on the component) find [un-triaged bugs in 
 
 For each bug decide priority (you can override what's already been set, as a triage lead, you are the decider.)
 
-| Priority | Description |
+| [Priority](#how-do-you-triage) | Description |
 | ---: | --- |
 | -- | No decision |
 | P1 | Fix in the current release cycle (nightly) |
