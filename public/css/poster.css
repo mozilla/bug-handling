@@ -8,7 +8,7 @@ body {
   padding: 2vh 2vw;
   height: 96vh;
   width: 100%;
-  font-size: 4vh;
+  font-size: 3.75vh;
 }
 
 a {
@@ -49,11 +49,3 @@ li::after {
 li:last-of-type::after {
   content: none
 }
-
-header {
-  min-height: 30vh; 
-}
-
-footer {
-  min-height: 10vh;
-} 
