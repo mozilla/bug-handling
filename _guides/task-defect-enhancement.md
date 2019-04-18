@@ -8,8 +8,8 @@ description: Classifying types of bugs in Mozilla Central
 Set the type when you file a bug to make triage easier. 
 
 ## <span style="font-family: 'Material Icons'; color: rgb(234, 60, 61);">&#xE3AC;</span> Defect
-Shipping software is not behaving as expected, a regression, a crash, an error
+Regression, crash, hang, security vulnerability and any other reported issue
 ## <span style="font-family: 'Material Icons'; color: rgb(42, 186, 39);">&#xE146;</span> Enhancement
-A new feature or function, or changing how an existing feature behaves
+New feature, improvement in UI, performance, etc. and any other request for user-facing enhancements to the product; not engineering changes
 ## <span style="font-family: 'Material Icons'; color: rgb(40, 134, 201);">&#xE85D;</span> Task
-Change a configuration, update a parameter, add a user, refactor existing code
+refactoring, removal, replacement, enabling or disabling of functionality and any other engineering task
