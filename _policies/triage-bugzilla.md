@@ -18,7 +18,7 @@ Staying on top of the bugs in your component means:
 
 ## Who Triages
 
-Engineering managers and directors are responsible for naming the individuals responsible for triaging bugs in a component.
+Engineering managers and directors are responsible for naming the individuals responsible for triaging [*defect* and *task* bugs](bug-types) in a component.
 
 We use Bugzilla to track this. See the [list of triage owners](https://bugzilla.mozilla.org/page.cgi?id=triage_owners.html).
 
@@ -28,7 +28,7 @@ If you need to change who is responsible for triaging a bug in a component, plea
 
 As a triage owner the queries you should be following for your component are:
 
-* All open bugs, priortizing those of type `defect` in your components without a pending `needinfo` flag or a `stalled` keyword since start of current release cycle which do not have a priorty set
+* All open bugs, in your components without a pending `needinfo` flag or a `stalled` keyword since start of current release cycle which do not have a priorty set
 * All bugs with active review requests in your component which have not been modified in five days
 * All bugs with reviewed, but unlanded patches in your components
 * All bugs with a needinfo request unanswered for more than 10 days
