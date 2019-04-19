@@ -6,7 +6,7 @@ description: How to prioritize defects and enhancements
 
 Our work *must* be focused on Mozilla's objectives, and as you triage bugs you should prioritize accordingly.
 
-Defects which affect:
+Defects and tasks which affect:
 
 * Performance
 * Privacy
