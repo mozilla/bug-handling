@@ -118,7 +118,7 @@ The extreme case of not-enough-information is one which cannot be answered with 
 
 Mark the bug as stalled by adding the `stalled` keyword to it. The keyword will remove it from the list of bugs to be triaged.
 
-The priority of `stalled` bugs should be '--' but other keywords may apply to them.
+If a patch lands on a `stalled` bug, automation will remove the keyword. Otherwise, when the `keyword` is removed, the bug will have it's priority reset to `--` and the components triage owner notified by automation.
 
 Bugs which remain `stalled` for long periods of time should be reviewed, and closed if necessary.
 
