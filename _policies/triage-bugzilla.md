@@ -9,6 +9,9 @@ description: Triage Process for Firefox Components in Mozilla-central and Bugzil
 All teams working on Firefox using either or both Mozilla-central and Bugzilla are expected to follow the following process. 
 
 ## Why Triage
+
+We want to make sure that we looked at every defect and a priority has been defined. This way, we make sure that we did not miss any critical issues during the development and stabilization cycles.
+
 Staying on top of the bugs in your component means:
 
 * You get ahead of critical regressions and crashes which could trigger a point release if uncaught
