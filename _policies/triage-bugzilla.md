@@ -53,7 +53,7 @@ For each bug decide priority (you can override what's already been set, as a tri
 | [Priority](#how-do-you-triage) | Description |
 | ---: | --- |
 | -- | No decision |
-| P1 | Fix in the current release cycle (nightly) |
+| P1 | Fix in the current release cycle |
 | P2 | Fix in the next release cycle or the following (nightly + 1 or nightly + 2) |
 | P3 | Backlog |
 | P4 | Do not use, this priority is for web platform test bots |
