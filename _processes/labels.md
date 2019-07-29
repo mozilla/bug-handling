@@ -1,4 +1,10 @@
-# A Mozillian’s Garden of Metadata for GitHub
+---
+title: GitHub Metadata Recommendations
+layout: policy
+published: true
+description: If you are working in GitHub, here are some suggestions on how to markup your repository's issues such that you are consistent with Bugzilla.
+---
+
 You have good reasons for running your piece of the Firefox project on GitHub: familiar tooling, an easy path for contributors, change sets which are integrated with code reviews, and emoji 🦊.
 
 To have better consistency with code and task tracking among Mozilla Central, Bugzilla, and GitHub, we request that you use a common set of labels in your projects. Benefits of improved consistency in our conventions include:
