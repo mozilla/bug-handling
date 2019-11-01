@@ -105,11 +105,15 @@ Set the bug's type to `enhancement`, add the `feature` keyword if relevant, and 
 
 Set the bug's type to `task`, and state to `NEW`. This bug will be excluded from future triage queries.
 
-If you are not sure of a bug's type, check [our rules for bug types](https://mozilla.github.io/task-defect-enhancement/index.html).
+If you are not sure of a bug's type, check [our rules for bug types](task-defect-enhancement).
 
 #### This bug's state is `UNCONFIRMED`
 
 Are there steps to reproduce? If not, needinfo the person who filed the bug, requesting steps to reproduce. You are not obligated to wait forever for a response, and bugs for which open requests for information go unanswered can be `RESOLVED` as `INCOMPLETE`.
+
+#### I need help reproducing the bug
+
+Set a needinfo for the QA managers, Softvision project managers, or the QA owner of the component of the bug.
 
 #### I don't have enough information to make a decision
 
