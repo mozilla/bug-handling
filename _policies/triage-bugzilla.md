@@ -111,6 +111,10 @@ If you are not sure of a bug's type, check [our rules for bug types](https://moz
 
 Are there steps to reproduce? If not, needinfo the person who filed the bug, requesting steps to reproduce. You are not obligated to wait forever for a response, and bugs for which open requests for information go unanswered can be `RESOLVED` as `INCOMPLETE`.
 
+#### I need help reproducing the bug
+
+Set a needinfo for the QA managers, Softvision project managers, or the QA owner of the component of the bug.
+
 #### I don't have enough information to make a decision
 
 If you don't have a reproduction or confirmation, or have questions about how to proceed, `needinfo` the person who filed the bug, or someone who can answer.
