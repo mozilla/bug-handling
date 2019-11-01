@@ -105,7 +105,7 @@ Set the bug's type to `enhancement`, add the `feature` keyword if relevant, and 
 
 Set the bug's type to `task`, and state to `NEW`. This bug will be excluded from future triage queries.
 
-If you are not sure of a bug's type, check [our rules for bug types](https://mozilla.github.io/task-defect-enhancement/index.html).
+If you are not sure of a bug's type, check [our rules for bug types](task-defect-enhancement).
 
 #### This bug's state is `UNCONFIRMED`
 
