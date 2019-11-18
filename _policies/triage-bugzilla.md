@@ -173,7 +173,7 @@ Are there P2s you now know are lower priority, move to P3.
 
 #### Review P3s
 
-Are their P3 bugs you now know you won’t get to? Either demote to P5 (will accept patch) or resolve as WONTFIX.
+Are there P3 bugs you now know you won’t get to? Either demote to P5 (will accept patch) or resolve as WONTFIX.
 
 ## Tools
 
