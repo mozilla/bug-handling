@@ -1,4 +1,4 @@
 # bug-handling
 Documentation Repository for Bug Handling in Firefox
 
-https://mozilla.github.io/bug-handling/
+https://firefox-bug-handling.mozilla.org/
