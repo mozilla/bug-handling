@@ -10,6 +10,7 @@ We use the `severity` field in Bugzilla to indicate the scope of a bug's effect 
 
 The field is display alongside the bug's priority. 
 
+![Screenshot of severity field](/public/images/screenshot-severity.png)
 
 ## Levels
 
