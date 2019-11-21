@@ -25,3 +25,10 @@ title: Home
     <li><a href=".{{guide.url}}" title="{{ guide.description }}">{{ guide.title }}</a></li>
     {% endfor %}
 </ul>
+
+## Related documentation
+
+* [bugzilla.mozilla.org documentation](https://bmo.readthedocs.org/)
+* [bugzilla.mozilla.org field defintions](https://wiki.mozilla.org/BMO/UserGuide/BugFields)
+* [Lando documenation](https://moz-conduit.readthedocs.io/en/latest/lando-user.html)
+* [Mozilla Phabricator (Code Review) documentation](https://moz-conduit.readthedocs.io/en/latest/phabricator-user.html)
