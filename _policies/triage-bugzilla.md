@@ -27,6 +27,22 @@ We use Bugzilla to track this. See the [list of triage owners](https://bugzilla.
 
 If you need to change who is responsible for triaging a bug in a component, please [file a bug against bugzilla.mozilla.org in the Administration component](https://bugzilla.mozilla.org/enter_bug.cgi?product=bugzilla.mozilla.org&component=Administration).  When a new component is created, a triage owner **must** be named.
 
+### Rotating triage
+
+Some components are monitored by a rotation of triagers. In those cases, the triage owner should be seen as the person responsible for assuring the component is triaged, but the work is done by the people in the rotation. The [rotations are managed as calendars](https://github.com/mozilla/relman-auto-nag/tree/master/auto_nag/scripts/configs).
+
+If you wish to set up a rotation for triaging one or more components, contact the Bugzilla team on Slack (#bmo.)
+
+### Firefox::General and Toolkit::General
+
+Bugs in Firefox::General are fitted with Bug Bug's model to see if there's another component with a high liklihood of fit, and if a threshold confidence is achived, the bug is moved to that component. 
+
+Members of the community also review bugs in this component and try to move them to a component.
+
+There are also two, rotating triagers for the component. They review the remaining bugs over the course of a month and move them if possible.
+
+To volunteer for this rotation, contact the Bugzilla team on Slack (#bmo.)
+
 ## What Do You Triage
 
 As a triage owner the queries you should be following for your component are:
