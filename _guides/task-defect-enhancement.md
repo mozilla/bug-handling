@@ -1,6 +1,6 @@
 ---
 title: Task, Defect, or Enhancement
-layout: poster
+layout: policy
 published: true
 description: Classifying types of bugs in Mozilla Central
 ---
