@@ -33,6 +33,10 @@ h2 {
   align-self: center;
 }
 
+img {
+  width: 100%;
+}
+
 table {
   margin: auto;
   width: 60%;
