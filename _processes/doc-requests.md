@@ -9,7 +9,7 @@ If you are working on a change (bugfix, enhancement, or feature) which would ben
 
 This flag can be modified by anyone with `EDITBUGS` privileges. 
 
-[ image of flag ]
+![Image of flag in tracking section of bug](/public/images/sumo-flag.png)
 
 The default value of the flag is `---`. 
 
@@ -19,6 +19,10 @@ Once the docs are ready to be published, set the flag to `docs-completed`.
 
 If it's determined that documentation is not need after setting the flag to `docs-needed`, update the flag to `none-needed` so we know that it's been reviewed.
 
+# Summary
+
+| From        || To           |
+| :---: | :---: | :---: |
 | ---         | to | none-needed    |
 | ---         | to | docs-needed    |
 | docs-needed | to | none-needed    |
