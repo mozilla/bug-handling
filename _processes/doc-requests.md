@@ -13,7 +13,7 @@ This flag can be modified by anyone with `EDITBUGS` privileges.
 
 The default value of the flag is `---`. 
 
-If the bug needs use-facing documentation, set the flag to `docs-needed`. This flag will be monitored by the support.mozilla.org (SUMO) team.
+If the bug needs user-facing documentation, set the flag to `docs-needed`. This flag will be monitored by the support.mozilla.org (SUMO) team.
 
 Once the docs are ready to be published, set the flag to `docs-completed`.
 
