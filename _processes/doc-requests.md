@@ -9,7 +9,7 @@ If you are working on a change (bugfix, enhancement, or feature) which would ben
 
 This flag can be modified by anyone with `EDITBUGS` privileges. 
 
-[ image of flag ]
+![Image of flag in tracking section of bug](/public/images/sumo-flag.png)
 
 The default value of the flag is `---`. 
 
