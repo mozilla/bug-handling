@@ -10,6 +10,10 @@ body {
   width: 90vw;
 }
 
+code {
+  font-family: monospace;
+}
+
 a {
     text-decoration: none;
     color: #999;
