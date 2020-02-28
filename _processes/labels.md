@@ -5,8 +5,6 @@ published: true
 description: If you are working in GitHub, here are some suggestions on how to markup your repository's issues such that you are consistent with Bugzilla.
 ---
 
-You have good reasons for running your piece of the Firefox project on GitHub: familiar tooling, an easy path for contributors, change sets which are integrated with code reviews, and emoji 🦊.
-
 To have better consistency with code and task tracking among Mozilla Central, Bugzilla, and GitHub, we request that you use a common set of labels in your projects. Benefits of improved consistency in our conventions include:
 
 * Consistency makes measurement of processes simpler across the organization
@@ -21,7 +19,7 @@ Several of you are doing this already. But we need you to do some tuning of your
 In Bugzilla bugs are distinguished by type: `defect`, `enhancement`, and `tasks`. Use a label to make this distinction in your project.
 
 ## Statuses
-Bugs in GitHub issues have two states: closed and open. Bugzilla has a ~~more confusing~~ richer set of states.
+Bugs in GitHub issues have two states: closed and open. Bugzilla has a richer set of states.
 
 When you close a bug, add a label indicating [the resolution](https://wiki.mozilla.org/BMO/UserGuide/BugStatuses#Resolutions).
 
