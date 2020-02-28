@@ -19,6 +19,10 @@ Once the docs are ready to be published, set the flag to `docs-completed`.
 
 If it's determined that documentation is not need after setting the flag to `docs-needed`, update the flag to `none-needed` so we know that it's been reviewed.
 
+# Summary
+
+| From        || To           |
+| :---: | :---: | :---: |
 | ---         | to | none-needed    |
 | ---         | to | docs-needed    |
 | docs-needed | to | none-needed    |
