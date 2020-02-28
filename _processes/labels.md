@@ -16,6 +16,10 @@ To have better consistency with code and task tracking among Mozilla Central, Bu
 
 Several of you are doing this already. But we need you to do some tuning of your process.
 
+## Bug types
+
+In Bugzilla bugs are distinguished by type: `defect`, `enhancement`, and `tasks`. Use a label to make this distinction in your project.
+
 ## Statuses
 Bugs in GitHub issues have two states: closed and open. Bugzilla has a ~~more confusing~~ richer set of states.
 
@@ -74,6 +78,11 @@ In Bugzilla, status for each release number is represented by a field which take
 It's recommended that you don't use status and tracking flag tags in GitHub issues and use another tool such a Trello or a worksheet to communicate to Release Drivers on work that needs to land in the `mozilla-centra1` repository.
 
 ## Summary
+
+To represent Bugzilla fields, use labels following this scheme.
+
+* Bug types
+	* `defect`, `enhancement`, `task`
 * Resolution statuses
 	* `invalid`, `duplicate`, `incomplete`, `worksforme`, `wontfix`
 * Regressions
@@ -81,4 +90,4 @@ It's recommended that you don't use status and tracking flag tags in GitHub issu
 * Priority
 	* `P1`, `P2`, `P3`, `P5`
 * Other keywords
-	* `enhancement`, `good first bug`
+	* `good first bug`, `perf`, &etc.
