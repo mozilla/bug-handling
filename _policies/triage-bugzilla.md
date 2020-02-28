@@ -161,7 +161,7 @@ If you'll accept a patch, mark it as P5, otherwise, close it as WONTFIX
 
 #### My project is on GitHub
 
-We have a guide for GitHub projects to follow when triaging.
+We have [a guide for GitHub projects to follow](/labels) when triaging.
 
 ### Watch open needinfo flags
 
