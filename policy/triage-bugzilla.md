@@ -1,1 +1,1 @@
-This page is now at https://mozilla.github.io/bug-handling/triage-bugzilla. Please update your bookmarks.
+This page is now at https://firefox-source-docs.mozilla.org/bug-mgmt/policies/triage-bugzilla.html. Please update your bookmarks.
